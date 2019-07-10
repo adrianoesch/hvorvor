@@ -1,8 +1,7 @@
 <html>
 <head>
 <link rel="icon" href="favicon.png">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="http://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyBQT5f94LsmFh2O4dn_HlQe0pQQMoUWUmM"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQT5f94LsmFh2O4dn_HlQe0pQQMoUWUmM&libraries=places"></script>
 <style>
 body{
   width:700px;
@@ -32,89 +31,92 @@ select{
 <body>
 <div id="container">
   <h1 style="font-size:43px;">Hvor mye varmere har din hjemby blitt siden du ble født?</h1>
-  <p><span class="label">Hiemby:</span><input type='text' size="40"></input></p>
   <p><span class="label">Fødselsår:</span><select></select></p>
-
+  <p><span class="label">Hiemby:</span><input type='text' size="40" value=''></input></p>
+  <div id='response'>
+    <div id='text'></div>
+    <div id='chart'></div>
+  </div>
 <div>
 </body>
 <script>
+// const GET = async (url) => {
+//   let headers = new Headers();
+//   headers.append('Authorization', 'Basic ' + window.btoa('03ab12fc-6478-461d-a86a-e1d5a3bc9cd0'));
+//   headers.append('Access-Control-Allow-Credentials', 'true');
+//   const response = await fetch(url,{
+//       method:'GET',
+//       headers: headers
+//     });
+//   const json = await response.json();
+//   return(json);
+// }
 
-function distanceInKm(lat1,lon1,lat2,lon2) {
-	var R = 6371; // km (change this constant to get miles)
-	var dLat = (lat2-lat1) * Math.PI / 180;
-	var dLon = (lon2-lon1) * Math.PI / 180;
-	var a = Math.sin(dLat/2) * Math.sin(dLat/2) +
-		Math.cos(lat1 * Math.PI / 180 ) * Math.cos(lat2 * Math.PI / 180 ) *
-		Math.sin(dLon/2) * Math.sin(dLon/2);
-	var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
-	var d = R * c;
-	return d;
-}
-
-var birthYear = document.querySelector('select');
-for(let i=1920;i<2018;i++){
-  var el = document.createElement("option");
-  el.textContent = i.toString();
-  el.value = i;
-  birthYear.appendChild(el);
+function update_year(e){
+  current_year = e.target.value;
+  update(current_place,current_year)
 };
-var input = document.querySelector('input')
-var autocomplete = new google.maps.places.Autocomplete(input);
-autocomplete.setFields(['address_components', 'geometry', 'icon', 'name']);
 
-var sources
-fetch('http://localhost:8000/sources_no.json').then(res => res.json())
-.then(function(data){
-  sources = data
-  // update([61.27102,7.1046013],1980)
-})
+function update_place(place){
+  var place = autocomplete.getPlace();
+  var location = place.geometry.location;
+  var location = {lat:location.lat(),lng:location.lng()};
+  current_location = location;
+  update(current_location,current_year)
+};
 
-const request = async (url) => {
-  let headers = new Headers();
-  headers.append('Authorization', 'Basic ' + window.btoa('03ab12fc-6478-461d-a86a-e1d5a3bc9cd0'));
-  headers.append('Access-Control-Allow-Credentials', 'true');
-  const response = await fetch(url,{
+function update(location,year){
+  // infowindow.close();
+  // marker.setVisible(false);
+
+  year = birthYearInput.value
+  if (year==''){
+    alert('Pleases select birth year.')
+    return
+  }
+  fetch('/',{
       method:'GET',
-      headers: headers
-    });
-  const json = await response.json();
-  return(json);
+      params:{
+        lat:location.lat,
+        lng:location.lng,
+        year:year
+      }
+    }).then(r=>r.json()).then(
+
+    );
+
 }
 
-function update(coords,year){
-  let dists = sources.map(function(i){
-    if(!('geometry' in i)){return(null)}
-    if(!('coordinates' in i['geometry'])){return(null)}
-    let validFromYear = parseInt(i['validFrom'])
-    let sourceCoords = i['geometry']['coordinates']
-    if(validFromYear>year){return(null)}
-    let dist = distanceInKm(coords[0],coords[1],sourceCoords[1],sourceCoords[0])
-    return([i['id'],dist])
-  }).filter(i=>i!=null)
-  let top100 = dists.sort((a,b)=>a[1]-b[1]).splice(0,5)
-  console.log(top100)
-  // for(i in top100){
-  //   console.log(i)
-  //   let availableTimeSeries = request('https://frost.met.no/observations/availableTimeSeries/v0.jsonld?sources='+i[0])
-  //   console.log(availableTimeSeries)
-  // }
-}
+function init(){
+  // populate birth year options
+  for(let i=1920;i<2019;i++){
+    var el = document.createElement("option");
+    el.textContent = i.toString();
+    el.value = i;
+    birthYearInput.appendChild(el);
+  };
+  var el = document.createElement("option");
+  el.value = '';
+  el.textContent = '';
+  birthYearInput.appendChild(el);
+  birthYearInput.onchange = update_year
+  birthYearInput.value = ''
+  autocomplete.setFields(['address_components', 'geometry', 'icon', 'name']);
+  autocomplete.setComponentRestrictions({'country':'NO'});
+  autocomplete.addListener('place_changed', update_place)
+};
 
-$.ajax({
-    url:'https://frost.met.no/observations/availableTimeSeries/v0.jsonld?sources=SN55710',
-    crossDomain: true,
-    credentials: true,
-    dataType:'jsonp',
-    beforeSend: function(xhr) {
-      xhr.setRequestHeader('Authorization', '03ab12fc-6478-461d-a86a-e1d5a3bc9cd0');
-      xhr.setRequestHeader('Access-Control-Allow-Origin', 'true');
-      xhr.setRequestHeader('Accept', 'text/plain');
-    },
-    success:function(d){
-      console.log(d)
-    }
-})
+
+var current_year,current_location;
+var birthYearInput = document.querySelector('select');
+var locationInput = document.querySelector('input');
+var autocomplete = new google.maps.places.Autocomplete(locationInput);
+
+init();
+
 
 
 </script>
 </html>
+
+<!-- use day instead of year -->

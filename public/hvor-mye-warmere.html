@@ -2,6 +2,7 @@
 <head>
 <link rel="icon" href="favicon.png">
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQT5f94LsmFh2O4dn_HlQe0pQQMoUWUmM&libraries=places"></script>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 <style>
 body{
   width:700px;
@@ -26,6 +27,9 @@ select{
   font-size: 20px;
   font-weight: 300;
 }
+#response{
+  margin-top: 100px;
+}
 </style>
 </head>
 <body>
@@ -34,27 +38,122 @@ select{
   <p><span class="label">Fødselsår:</span><select></select></p>
   <p><span class="label">Hiemby:</span><input type='text' size="40" value=''></input></p>
   <div id='response'>
-    <div id='text'></div>
     <div id='chart'></div>
+    <div id='text'></div>
   </div>
 <div>
 </body>
 <script>
-// const GET = async (url) => {
-//   let headers = new Headers();
-//   headers.append('Authorization', 'Basic ' + window.btoa('03ab12fc-6478-461d-a86a-e1d5a3bc9cd0'));
-//   headers.append('Access-Control-Allow-Credentials', 'true');
-//   const response = await fetch(url,{
-//       method:'GET',
-//       headers: headers
-//     });
-//   const json = await response.json();
-//   return(json);
-// }
+function render(response){
+  var chart = document.getElementById('chart')
+  if(!response.success){
+    chart.style.display='none'
+    return
+  }
+  console.log(response)
+  var plotData =  [{
+    x: response.annual.map(i=>parseInt(i.referenceTime.slice(0,4))),
+    y: response.annual.map(i=>i.value),
+    type:'line',
+    name: 'årlig lufttemperatur',
+    line:{
+      color : 'rgb(254, 127, 127)',
+      width:1
+    }
+  },{
+    x: response.annual_rolling.map(i=>parseInt(i.referenceTime.slice(0,4))),
+    y: response.annual_rolling.map(i=>i.value),
+    type:'line',
+    name: '5år gjennomsnitt',
+    line : {
+      color:'rgb(176, 32, 32)',
+      width:2
+    }
+  }];
+  let start_value = response.annual_rolling[0].value
+  let end_value = response.annual_rolling[response.annual_rolling.length-1].value
+  var layout = {
+      margin: { t: 0,r:70,l:60 },
+      showLegend:true,
+      legend: {
+        orientation:'h',
+        x: .25,
+        y: 1.1
+      },
+      yaxis: {
+        title:'grader celsius (°C)'
+      },
+      shapes : [{
+            'type': 'line',
+            'xref':'paper',
+            'x0': 0,
+            'x1': 1.05,
+            'yref':'y',
+            'y0': start_value,
+            'y1': start_value,
+            'line': {
+                'color': 'rgba(111, 111, 111, 1)',
+                'width': 1,
+                'dash':'dash'
+            }
+        },{
+              'type': 'line',
+              'xref':'paper',
+              'x0': 0,
+              'x1': 1.05,
+              'yref':'y',
+              'y0': end_value,
+              'y1': end_value,
+              'line': {
+                  'color': 'rgba(111, 111, 111, 1)',
+                  'width': 1,
+                  'dash':'dash'
+              }
+        },{
+              'type': 'arrow',
+              'xref':'paper',
+              'x0': 1.025,
+              'x1': 1.025,
+              'yref':'y',
+              'y0': start_value,
+              'y1': end_value,
+              'line': {
+                  'color': 'rgb(176, 32, 32)',
+                  'width': 3,
+              }
+        }],
+        annotations : [{
+          'yref':'y',
+          'y':start_value+((end_value-start_value)/2),
+          'xref':'paper',
+          'x':1.125,
+          'showarrow':false,
+          'text':(response.difference>0 ? '+' : '') + response.difference.toFixed(1)+'°C',
+          'textposition':'bottom right',
+          'font':{
+            'size':14,
+            'color':'rgb(176, 32, 32)'
+          }
+        }]
+  };
+  var config ={
+    'displayModeBar': false
+  }
+  Plotly.newPlot( chart, plotData, layout,config);
+  let station = response.source_coords
+  let start_year = response.annual[0]['referenceTime'].slice(0,4)
+  document.getElementById('text').innerHTML =
+    '<p style="font-size:28px;">Gjennomsnittlig lufttemperatur på fødestedet ditt har '+(response.difference>0 ? 'økt' : 'redusert')+' med '+response.difference.toFixed(1)+'°C '+
+    'mellom '+start_year+' og 2018.</p>'+
+    '<p>Denne observasjonen er basert på data fra en meteorologisk stasjon '+response.distance_in_km.toFixed(1)+' km fra fødestedet ditt '+
+    '(se <a target="_blank" href="https://www.google.com/maps/search/'+station.lat.toString()+','+station.lng.toString()+'">plassering</a>). '+
+    'Dataene ble levert av <a target="_blank" href="https://frost.met.no/index.html">Frost</a>, en tjeneste fra MET Norge.</p>';
+
+};
 
 function update_year(e){
   current_year = e.target.value;
-  update(current_place,current_year)
+  update(current_location,current_year)
 };
 
 function update_place(place){
@@ -68,23 +167,20 @@ function update_place(place){
 function update(location,year){
   // infowindow.close();
   // marker.setVisible(false);
-
-  year = birthYearInput.value
+  if (location == null){
+    return
+  }
   if (year==''){
     alert('Pleases select birth year.')
     return
   }
-  fetch('/',{
-      method:'GET',
-      params:{
-        lat:location.lat,
-        lng:location.lng,
-        year:year
-      }
-    }).then(r=>r.json()).then(
-
-    );
-
+  let url = './hvor-mye-warmere/'+
+    '?lat='+location.lat.toString()+
+    '&lng='+location.lng.toString()+
+    '&year='+year.toString();
+  fetch(url)
+    .then(r=>r.json())
+    .then(render);
 }
 
 function init(){
@@ -114,7 +210,7 @@ var autocomplete = new google.maps.places.Autocomplete(locationInput);
 
 init();
 
-
+// update({lat:})
 
 </script>
 </html>

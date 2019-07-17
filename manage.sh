@@ -19,6 +19,13 @@ case "$1" in
     sleep 2
     $0 start
     ;;
+  deploy)
+    # Re-run this script with stop and start arguments.
+    $0 stop
+    sleep 2
+    git pull
+    $0 start
+    ;;
   reload|force-reload)
     echo "WARNING reload and force-reload not supported by this script"
 esac

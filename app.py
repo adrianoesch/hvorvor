@@ -9,13 +9,8 @@ app = Flask(__name__,static_folder='public')
 app.register_blueprint(skiturer, url_prefix='/skiturer-norge')
 app.register_blueprint(hvor_mye_warmere, url_prefix='/hvor-mye-warmere')
 
-@app.route('/',methods=['GET'])
-def home():
-    return('<h1>Personal API Service</h1>')
-
 @app.route('/<path:path>',methods=['GET'])
 def send(path):
-    print(path)
     return send_from_directory('public',path)
 
 if __name__=='__main__':

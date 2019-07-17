@@ -1,0 +1,4355 @@
+[
+  {
+    "@type": "SensorSystem",
+    "id": "SN87110",
+    "name": "ANDØYA",
+    "shortName": "Andøya LH",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1010,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        16.1312,
+        69.3073
+      ],
+      "nearest": false
+    },
+    "masl": 10,
+    "validFrom": "2005-10-01T00:00:00.000Z",
+    "county": "NORDLAND",
+    "countyId": 18,
+    "municipality": "ANDØY",
+    "municipalityId": 1871,
+    "stationHolders": [
+      "MET.NO",
+      "AVINOR"
+    ],
+    "externalIds": [
+      "01010",
+      "10.249.0.55",
+      "10.249.1.89",
+      "ENAN"
+    ],
+    "icaoCodes": [
+      "ENAN"
+    ],
+    "wigosId": "0-20000-0-01010",
+    "sourceId": "SN87110:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN87110:0&referencetime=2005-10-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN44640",
+    "name": "STAVANGER - VÅLAND",
+    "shortName": "Våland",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1416,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        5.7278,
+        58.9563
+      ],
+      "nearest": false
+    },
+    "masl": 72,
+    "validFrom": "1942-12-01T00:00:00.000Z",
+    "county": "ROGALAND",
+    "countyId": 11,
+    "municipality": "STAVANGER",
+    "municipalityId": 1103,
+    "stationHolders": [
+      "STAVANGER KOMMUNE"
+    ],
+    "externalIds": [
+      "01416",
+      "10.249.0.92"
+    ],
+    "wigosId": "0-20000-0-01416",
+    "sourceId": "SN44640:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN44640:0&referencetime=1942-12-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN68290",
+    "name": "SELBU II",
+    "shortName": "Selbu",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1273,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        11.0075,
+        63.2248
+      ],
+      "nearest": false
+    },
+    "masl": 160,
+    "validFrom": "1920-10-01T00:00:00.000Z",
+    "county": "TRØNDELAG",
+    "countyId": 50,
+    "municipality": "SELBU",
+    "municipalityId": 5032,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01273"
+    ],
+    "wigosId": "0-20000-0-01273",
+    "sourceId": "SN68290:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN68290:0&referencetime=1920-10-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN27450",
+    "name": "MELSOM",
+    "shortName": "Melsom",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1481,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        10.3483,
+        59.23
+      ],
+      "nearest": false
+    },
+    "masl": 26,
+    "validFrom": "1959-04-01T00:00:00.000Z",
+    "county": "VESTFOLD",
+    "countyId": 7,
+    "municipality": "SANDEFJORD",
+    "municipalityId": 710,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01481",
+      "10.249.0.131"
+    ],
+    "wigosId": "0-20000-0-01481",
+    "sourceId": "SN27450:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN27450:0&referencetime=1959-04-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN97350",
+    "name": "CUOVDDATMOHKKI",
+    "shortName": "Čoavddatmohkki",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1057,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        24.4312,
+        69.3695
+      ],
+      "nearest": false
+    },
+    "masl": 286,
+    "validFrom": "1966-08-01T00:00:00.000Z",
+    "county": "FINNMARK",
+    "countyId": 20,
+    "municipality": "KARASJOHKA-KARASJOK",
+    "municipalityId": 2021,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01057"
+    ],
+    "wigosId": "0-20000-0-01057",
+    "sourceId": "SN97350:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN97350:0&referencetime=1966-08-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN70850",
+    "name": "SNÅSA - KJEVLIA",
+    "shortName": "Snåsa - Kjevlia",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1124,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        12.4692,
+        64.1587
+      ],
+      "nearest": false
+    },
+    "masl": 195,
+    "validFrom": "1939-12-01T00:00:00.000Z",
+    "county": "TRØNDELAG",
+    "countyId": 50,
+    "municipality": "SNÅSA",
+    "municipalityId": 5041,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01124",
+      "10.249.0.222"
+    ],
+    "wigosId": "0-20000-0-01124",
+    "sourceId": "SN70850:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN70850:0&referencetime=1939-12-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN28380",
+    "name": "KONGSBERG BRANNSTASJON",
+    "shortName": "Kongsberg",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1473,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        9.6377,
+        59.6247
+      ],
+      "nearest": false
+    },
+    "masl": 170,
+    "validFrom": "1910-12-01T00:00:00.000Z",
+    "county": "BUSKERUD",
+    "countyId": 6,
+    "municipality": "KONGSBERG",
+    "municipalityId": 604,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01473",
+      "10.30.214.2"
+    ],
+    "wigosId": "0-20000-0-01473",
+    "sourceId": "SN28380:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN28380:0&referencetime=1910-12-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN24890",
+    "name": "NESBYEN - TODOKK",
+    "shortName": "Nesbyen",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1373,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        9.1323,
+        60.567
+      ],
+      "nearest": false
+    },
+    "masl": 166,
+    "validFrom": "1897-01-01T00:00:00.000Z",
+    "county": "BUSKERUD",
+    "countyId": 6,
+    "municipality": "NES",
+    "municipalityId": 616,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01373",
+      "10.249.0.212"
+    ],
+    "wigosId": "0-20000-0-01373",
+    "sourceId": "SN24890:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN24890:0&referencetime=1897-01-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN50310",
+    "name": "KVAMSKOGEN - JONSHØGDI",
+    "shortName": "Kvamskogen",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1327,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        5.964,
+        60.3887
+      ],
+      "nearest": false
+    },
+    "masl": 455,
+    "validFrom": "1947-04-01T00:00:00.000Z",
+    "county": "HORDALAND",
+    "countyId": 12,
+    "municipality": "KVAM",
+    "municipalityId": 1238,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01327",
+      "10.249.0.236"
+    ],
+    "wigosId": "0-20000-0-01327",
+    "sourceId": "SN50310:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN50310:0&referencetime=1947-04-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN51530",
+    "name": "VOSSEVANGEN",
+    "shortName": "Vossevangen",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1337,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        6.4265,
+        60.6251
+      ],
+      "nearest": false
+    },
+    "masl": 54,
+    "validFrom": "1935-09-01T00:00:00.000Z",
+    "county": "HORDALAND",
+    "countyId": 12,
+    "municipality": "VOSS",
+    "municipalityId": 1235,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01337"
+    ],
+    "wigosId": "0-20000-0-01337",
+    "sourceId": "SN51530:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN51530:0&referencetime=1935-09-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN90800",
+    "name": "TORSVÅG FYR",
+    "shortName": "Torsvåg fyr",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1033,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        19.4997,
+        70.2452
+      ],
+      "nearest": false
+    },
+    "masl": 21,
+    "validFrom": "1933-09-01T00:00:00.000Z",
+    "county": "TROMS",
+    "countyId": 19,
+    "municipality": "KARLSØY",
+    "municipalityId": 1936,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01033",
+      "10.249.1.135"
+    ],
+    "wigosId": "0-20000-0-01033",
+    "sourceId": "SN90800:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN90800:0&referencetime=1933-09-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN52535",
+    "name": "FEDJE",
+    "shortName": "Fedje",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1307,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        4.72,
+        60.78
+      ],
+      "nearest": false
+    },
+    "masl": 19,
+    "validFrom": "1867-09-01T00:00:00.000Z",
+    "county": "HORDALAND",
+    "countyId": 12,
+    "municipality": "FEDJE",
+    "municipalityId": 1265,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01307",
+      "10.249.0.205"
+    ],
+    "wigosId": "0-20000-0-01307",
+    "sourceId": "SN52535:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN52535:0&referencetime=1867-09-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN48330",
+    "name": "SLÅTTERØY FYR",
+    "shortName": "Slåtterøy fyr",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1406,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        5.0683,
+        59.9083
+      ],
+      "nearest": false
+    },
+    "masl": 25,
+    "validFrom": "1946-12-01T00:00:00.000Z",
+    "county": "HORDALAND",
+    "countyId": 12,
+    "municipality": "BØMLO",
+    "municipalityId": 1219,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01406",
+      "10.249.1.64"
+    ],
+    "wigosId": "0-20000-0-01406",
+    "sourceId": "SN48330:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN48330:0&referencetime=1946-12-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN36200",
+    "name": "TORUNGEN FYR",
+    "shortName": "Torungen fyr",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1465,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        8.7893,
+        58.3988
+      ],
+      "nearest": false
+    },
+    "masl": 12,
+    "validFrom": "1867-07-01T00:00:00.000Z",
+    "county": "AUST-AGDER",
+    "countyId": 9,
+    "municipality": "ARENDAL",
+    "municipalityId": 906,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01465",
+      "10.249.1.67"
+    ],
+    "wigosId": "0-20000-0-01465",
+    "sourceId": "SN36200:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN36200:0&referencetime=1867-07-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN44080",
+    "name": "OBRESTAD FYR",
+    "shortName": "Obrestad fyr",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1412,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        5.5553,
+        58.6592
+      ],
+      "nearest": false
+    },
+    "masl": 24,
+    "validFrom": "1940-09-01T00:00:00.000Z",
+    "county": "ROGALAND",
+    "countyId": 11,
+    "municipality": "HÅ",
+    "municipalityId": 1119,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01412",
+      "10.249.0.185"
+    ],
+    "wigosId": "0-20000-0-01412",
+    "sourceId": "SN44080:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN44080:0&referencetime=1940-09-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN46610",
+    "name": "SAUDA",
+    "shortName": "Sauda",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1424,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        6.35,
+        59.6478
+      ],
+      "nearest": false
+    },
+    "masl": 5,
+    "validFrom": "1928-03-01T00:00:00.000Z",
+    "county": "ROGALAND",
+    "countyId": 11,
+    "municipality": "SAUDA",
+    "municipalityId": 1135,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01424",
+      "10.249.1.86"
+    ],
+    "wigosId": "0-20000-0-01424",
+    "sourceId": "SN46610:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN46610:0&referencetime=1928-03-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN80102",
+    "name": "SOLVÆR III",
+    "shortName": "Solvær",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1121,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        12.6108,
+        66.3708
+      ],
+      "nearest": false
+    },
+    "masl": 10,
+    "validFrom": "2007-11-01T00:00:00.000Z",
+    "county": "NORDLAND",
+    "countyId": 18,
+    "municipality": "LURØY",
+    "municipalityId": 1834,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01121",
+      "10.249.0.164"
+    ],
+    "wigosId": "0-20000-0-01121",
+    "sourceId": "SN80102:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN80102:0&referencetime=2007-11-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN34130",
+    "name": "JOMFRULAND",
+    "shortName": "Jomfruland",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1476,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        9.5745,
+        58.8565
+      ],
+      "nearest": false
+    },
+    "masl": 3,
+    "validFrom": "1940-10-01T00:00:00.000Z",
+    "county": "TELEMARK",
+    "countyId": 8,
+    "municipality": "KRAGERØ",
+    "municipalityId": 815,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01476"
+    ],
+    "wigosId": "0-20000-0-01476",
+    "sourceId": "SN34130:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN34130:0&referencetime=1940-10-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN68860",
+    "name": "TRONDHEIM - VOLL",
+    "shortName": "Trondheim",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1257,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        10.4538,
+        63.4107
+      ],
+      "nearest": false
+    },
+    "masl": 127,
+    "validFrom": "1922-12-01T00:00:00.000Z",
+    "county": "TRØNDELAG",
+    "countyId": 50,
+    "municipality": "TRONDHEIM",
+    "municipalityId": 5001,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01257",
+      "10.249.0.160"
+    ],
+    "wigosId": "0-20000-0-01257",
+    "sourceId": "SN68860:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN68860:0&referencetime=1922-12-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN50540",
+    "name": "BERGEN - FLORIDA",
+    "shortName": "Bergen",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1317,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        5.3327,
+        60.383
+      ],
+      "nearest": false
+    },
+    "masl": 12,
+    "validFrom": "1948-12-01T00:00:00.000Z",
+    "county": "HORDALAND",
+    "countyId": 12,
+    "municipality": "BERGEN",
+    "municipalityId": 1201,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01317",
+      "10.249.0.159"
+    ],
+    "wigosId": "0-20000-0-01317",
+    "sourceId": "SN50540:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN50540:0&referencetime=1948-12-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN18950",
+    "name": "TRYVANNSHØGDA",
+    "shortName": "Tryvannshøgda",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1490,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        10.6693,
+        59.9847
+      ],
+      "nearest": false
+    },
+    "masl": 514,
+    "validFrom": "1927-08-01T00:00:00.000Z",
+    "county": "OSLO",
+    "countyId": 3,
+    "municipality": "OSLO",
+    "municipalityId": 301,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01490",
+      "10.249.0.2"
+    ],
+    "wigosId": "0-20000-0-01490",
+    "sourceId": "SN18950:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN18950:0&referencetime=1927-08-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN85380",
+    "name": "SKROVA FYR",
+    "shortName": "Skrova fyr",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1160,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        14.6427,
+        68.1522
+      ],
+      "nearest": false
+    },
+    "masl": 11,
+    "validFrom": "1885-12-01T00:00:00.000Z",
+    "county": "NORDLAND",
+    "countyId": 18,
+    "municipality": "VÅGAN",
+    "municipalityId": 1865,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01160",
+      "10.249.0.104"
+    ],
+    "wigosId": "0-20000-0-01160",
+    "sourceId": "SN85380:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN85380:0&referencetime=1885-12-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN21680",
+    "name": "VEST-TORPA II",
+    "shortName": "Vest-Torpa",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1374,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        10.0358,
+        60.9345
+      ],
+      "nearest": false
+    },
+    "masl": 542,
+    "validFrom": "1963-10-01T00:00:00.000Z",
+    "county": "OPPLAND",
+    "countyId": 5,
+    "municipality": "NORDRE LAND",
+    "municipalityId": 538,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01374",
+      "10.249.1.22"
+    ],
+    "wigosId": "0-20000-0-01374",
+    "sourceId": "SN21680:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN21680:0&referencetime=1963-10-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN4780",
+    "name": "GARDERMOEN",
+    "shortName": "Gardermoen",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1384,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        11.0802,
+        60.2065
+      ],
+      "nearest": false
+    },
+    "masl": 202,
+    "validFrom": "1940-12-01T00:00:00.000Z",
+    "county": "AKERSHUS",
+    "countyId": 2,
+    "municipality": "ULLENSAKER",
+    "municipalityId": 235,
+    "stationHolders": [
+      "AVINOR"
+    ],
+    "externalIds": [
+      "01384",
+      "ENGM"
+    ],
+    "icaoCodes": [
+      "ENGM"
+    ],
+    "wigosId": "0-20000-0-01384",
+    "sourceId": "SN4780:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN4780:0&referencetime=1940-12-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN93700",
+    "name": "KAUTOKEINO",
+    "shortName": "Kautokeino",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1047,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        23.0335,
+        68.9968
+      ],
+      "nearest": false
+    },
+    "masl": 307,
+    "validFrom": "1921-06-01T00:00:00.000Z",
+    "county": "FINNMARK",
+    "countyId": 20,
+    "municipality": "GUOVDAGEAIDNU-KAUTOKEINO",
+    "municipalityId": 2011,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01047",
+      "10.249.0.210"
+    ],
+    "wigosId": "0-20000-0-01047",
+    "sourceId": "SN93700:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN93700:0&referencetime=1921-06-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN13420",
+    "name": "VENABU",
+    "shortName": "Venabu",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1380,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        10.1082,
+        61.6513
+      ],
+      "nearest": false
+    },
+    "masl": 930,
+    "validFrom": "1980-08-01T00:00:00.000Z",
+    "county": "OPPLAND",
+    "countyId": 5,
+    "municipality": "RINGEBU",
+    "municipalityId": 520,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01380",
+      "10.249.0.165"
+    ],
+    "wigosId": "0-20000-0-01380",
+    "sourceId": "SN13420:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN13420:0&referencetime=1980-08-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN75550",
+    "name": "SKLINNA FYR",
+    "shortName": "Sklinna fyr",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1102,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        10.9965,
+        65.2023
+      ],
+      "nearest": false
+    },
+    "masl": 23,
+    "validFrom": "1974-11-01T00:00:00.000Z",
+    "county": "TRØNDELAG",
+    "countyId": 50,
+    "municipality": "LEKA",
+    "municipalityId": 5052,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01102",
+      "10.249.1.57"
+    ],
+    "wigosId": "0-20000-0-01102",
+    "sourceId": "SN75550:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN75550:0&referencetime=1974-11-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN99720",
+    "name": "HOPEN",
+    "shortName": "Hopen",
+    "country": "Svalbard og Jan Mayen",
+    "countryCode": "SJ",
+    "wmoId": 1062,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        25.0133,
+        76.5097
+      ],
+      "nearest": false
+    },
+    "masl": 6,
+    "validFrom": "1945-11-01T00:00:00.000Z",
+    "county": "SVALBARD",
+    "countyId": 21,
+    "municipality": "SVALBARD",
+    "municipalityId": 2100,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01062",
+      "LML"
+    ],
+    "shipCodes": [
+      "LML"
+    ],
+    "wigosId": "0-20000-0-01062",
+    "sourceId": "SN99720:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN99720:0&referencetime=1945-11-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN99370",
+    "name": "KIRKENES LUFTHAVN",
+    "shortName": "Kirkenes LH",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1089,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        29.8977,
+        69.7255
+      ],
+      "nearest": false
+    },
+    "masl": 89,
+    "validFrom": "1964-02-01T00:00:00.000Z",
+    "county": "FINNMARK",
+    "countyId": 20,
+    "municipality": "SØR-VARANGER",
+    "municipalityId": 2030,
+    "stationHolders": [
+      "AVINOR"
+    ],
+    "externalIds": [
+      "01089",
+      "10.249.0.54",
+      "ENKR"
+    ],
+    "icaoCodes": [
+      "ENKR"
+    ],
+    "wigosId": "0-20000-0-01089",
+    "sourceId": "SN99370:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN99370:0&referencetime=1964-02-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN93900",
+    "name": "SIHCCAJAVRI",
+    "shortName": "Šihččajávri",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1199,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        23.5387,
+        68.7553
+      ],
+      "nearest": false
+    },
+    "masl": 382,
+    "validFrom": "1912-12-01T00:00:00.000Z",
+    "county": "FINNMARK",
+    "countyId": 20,
+    "municipality": "GUOVDAGEAIDNU-KAUTOKEINO",
+    "municipalityId": 2011,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01199",
+      "300134010806040"
+    ],
+    "wigosId": "0-20000-0-01199",
+    "sourceId": "SN93900:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN93900:0&referencetime=1912-12-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN32060",
+    "name": "GVARV - NES",
+    "shortName": "Gvarv",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1470,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        9.2128,
+        59.3822
+      ],
+      "nearest": false
+    },
+    "masl": 93,
+    "validFrom": "1919-07-01T00:00:00.000Z",
+    "county": "TELEMARK",
+    "countyId": 8,
+    "municipality": "SAUHERAD",
+    "municipalityId": 822,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01470",
+      "10.249.0.133",
+      "10.30.214.1"
+    ],
+    "wigosId": "0-20000-0-01470",
+    "sourceId": "SN32060:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN32060:0&referencetime=1919-07-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN88690",
+    "name": "HEKKINGEN FYR",
+    "shortName": "Hekkingen fyr",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1015,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        17.8303,
+        69.6013
+      ],
+      "nearest": false
+    },
+    "masl": 14,
+    "validFrom": "1940-10-01T00:00:00.000Z",
+    "county": "TROMS",
+    "countyId": 19,
+    "municipality": "LENVIK",
+    "municipalityId": 1931,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01015",
+      "10.249.0.114",
+      "10.249.0.146"
+    ],
+    "wigosId": "0-20000-0-01015",
+    "sourceId": "SN88690:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN88690:0&referencetime=1940-10-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN55820",
+    "name": "FJÆRLAND - BREMUSEET",
+    "shortName": "Fjærland",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1332,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        6.7642,
+        61.4233
+      ],
+      "nearest": false
+    },
+    "masl": 3,
+    "validFrom": "1920-12-01T00:00:00.000Z",
+    "county": "SOGN OG FJORDANE",
+    "countyId": 14,
+    "municipality": "SOGNDAL",
+    "municipalityId": 1420,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01332",
+      "10.249.1.70"
+    ],
+    "wigosId": "0-20000-0-01332",
+    "sourceId": "SN55820:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN55820:0&referencetime=1920-12-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN96400",
+    "name": "SLETTNES FYR",
+    "shortName": "Slettnes fyr",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1078,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        28.217,
+        71.0888
+      ],
+      "nearest": false
+    },
+    "masl": 8,
+    "validFrom": "1947-06-01T00:00:00.000Z",
+    "county": "FINNMARK",
+    "countyId": 20,
+    "municipality": "GAMVIK",
+    "municipalityId": 2023,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01078",
+      "10.249.0.88"
+    ],
+    "wigosId": "0-20000-0-01078",
+    "sourceId": "SN96400:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN96400:0&referencetime=1947-06-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN50500",
+    "name": "FLESLAND",
+    "shortName": "Flesland",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1311,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        5.2265,
+        60.2892
+      ],
+      "nearest": false
+    },
+    "masl": 48,
+    "validFrom": "1955-11-01T00:00:00.000Z",
+    "county": "HORDALAND",
+    "countyId": 12,
+    "municipality": "BERGEN",
+    "municipalityId": 1201,
+    "stationHolders": [
+      "MET.NO",
+      "AVINOR"
+    ],
+    "externalIds": [
+      "01311",
+      "10.249.0.174",
+      "10.249.0.62",
+      "ENBR"
+    ],
+    "icaoCodes": [
+      "ENBR"
+    ],
+    "wigosId": "0-20000-0-01311",
+    "sourceId": "SN50500:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN50500:0&referencetime=1955-11-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN25630",
+    "name": "GEILO - OLDEBRÅTEN",
+    "shortName": "Geilo",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1359,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        8.1948,
+        60.53
+      ],
+      "nearest": false
+    },
+    "masl": 772,
+    "validFrom": "1941-12-01T00:00:00.000Z",
+    "county": "BUSKERUD",
+    "countyId": 6,
+    "municipality": "HOL",
+    "municipalityId": 620,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01359"
+    ],
+    "wigosId": "0-20000-0-01359",
+    "sourceId": "SN25630:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN25630:0&referencetime=1941-12-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN90490",
+    "name": "TROMSØ - LANGNES",
+    "shortName": "Tromsø LH",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1025,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        18.9133,
+        69.6767
+      ],
+      "nearest": false
+    },
+    "masl": 8,
+    "validFrom": "1964-10-01T00:00:00.000Z",
+    "county": "TROMS",
+    "countyId": 19,
+    "municipality": "TROMSØ",
+    "municipalityId": 1902,
+    "stationHolders": [
+      "AVINOR"
+    ],
+    "externalIds": [
+      "01025",
+      "10.249.0.39",
+      "ENTC"
+    ],
+    "icaoCodes": [
+      "ENTC"
+    ],
+    "wigosId": "0-20000-0-01025",
+    "sourceId": "SN90490:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN90490:0&referencetime=1964-10-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN47300",
+    "name": "UTSIRA FYR",
+    "shortName": "Utsira",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1403,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        4.8723,
+        59.3065
+      ],
+      "nearest": false
+    },
+    "masl": 55,
+    "validFrom": "1867-11-01T00:00:00.000Z",
+    "county": "ROGALAND",
+    "countyId": 11,
+    "municipality": "UTSIRA",
+    "municipalityId": 1151,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01403",
+      "10.249.0.16"
+    ],
+    "wigosId": "0-20000-0-01403",
+    "sourceId": "SN47300:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN47300:0&referencetime=1867-11-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN82290",
+    "name": "BODØ VI",
+    "shortName": "Bodø",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1152,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        14.3637,
+        67.267
+      ],
+      "nearest": false
+    },
+    "masl": 11,
+    "validFrom": "1925-09-01T00:00:00.000Z",
+    "county": "NORDLAND",
+    "countyId": 18,
+    "municipality": "BODØ",
+    "municipalityId": 1804,
+    "stationHolders": [
+      "MET.NO",
+      "AVINOR"
+    ],
+    "externalIds": [
+      "01152",
+      "ENBO"
+    ],
+    "icaoCodes": [
+      "ENBO"
+    ],
+    "wigosId": "0-20000-0-01152",
+    "sourceId": "SN82290:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN82290:0&referencetime=1925-09-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN62480",
+    "name": "ONA II",
+    "shortName": "Ona",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1212,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        6.5378,
+        62.8585
+      ],
+      "nearest": false
+    },
+    "masl": 20,
+    "validFrom": "1867-12-01T00:00:00.000Z",
+    "county": "MØRE OG ROMSDAL",
+    "countyId": 15,
+    "municipality": "SANDØY",
+    "municipalityId": 1546,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01212",
+      "10.249.0.231"
+    ],
+    "wigosId": "0-20000-0-01212",
+    "sourceId": "SN62480:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN62480:0&referencetime=1867-12-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN16610",
+    "name": "FOKSTUGU",
+    "shortName": "Fokstugu",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1238,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        9.2862,
+        62.1133
+      ],
+      "nearest": false
+    },
+    "masl": 973,
+    "validFrom": "1923-02-01T00:00:00.000Z",
+    "county": "OPPLAND",
+    "countyId": 5,
+    "municipality": "DOVRE",
+    "municipalityId": 511,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01238",
+      "10.249.0.158"
+    ],
+    "wigosId": "0-20000-0-01238",
+    "sourceId": "SN16610:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN16610:0&referencetime=1923-02-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN91740",
+    "name": "SØRKJOSEN LUFTHAVN",
+    "shortName": "Sørkjosen",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1046,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        20.9553,
+        69.7887
+      ],
+      "nearest": false
+    },
+    "masl": 6,
+    "validFrom": "1958-11-01T00:00:00.000Z",
+    "county": "TROMS",
+    "countyId": 19,
+    "municipality": "NORDREISA",
+    "municipalityId": 1942,
+    "stationHolders": [
+      "AVINOR"
+    ],
+    "externalIds": [
+      "01046",
+      "10.249.0.40",
+      "ENSR"
+    ],
+    "icaoCodes": [
+      "ENSR"
+    ],
+    "wigosId": "0-20000-0-01046",
+    "sourceId": "SN91740:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN91740:0&referencetime=1958-11-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN31970",
+    "name": "GAUSTATOPPEN",
+    "shortName": "Gaustatoppen",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1461,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        8.6562,
+        59.8497
+      ],
+      "nearest": false
+    },
+    "masl": 1804,
+    "validFrom": "1934-09-01T00:00:00.000Z",
+    "county": "TELEMARK",
+    "countyId": 8,
+    "municipality": "TINN",
+    "municipalityId": 826,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01461",
+      "10.249.0.240"
+    ],
+    "wigosId": "0-20000-0-01461",
+    "sourceId": "SN31970:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN31970:0&referencetime=1934-09-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN93301",
+    "name": "SUOLOVUOPMI - LULIT",
+    "shortName": "Suolovuopmi",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1058,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        23.5345,
+        69.5797
+      ],
+      "nearest": false
+    },
+    "masl": 381,
+    "validFrom": "1963-10-01T00:00:00.000Z",
+    "county": "FINNMARK",
+    "countyId": 20,
+    "municipality": "GUOVDAGEAIDNU-KAUTOKEINO",
+    "municipalityId": 2011,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01058",
+      "10.249.1.96"
+    ],
+    "wigosId": "0-20000-0-01058",
+    "sourceId": "SN93301:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN93301:0&referencetime=1963-10-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN45870",
+    "name": "FISTER - SIGMUNDSTAD",
+    "shortName": "Fister",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1422,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        6.0365,
+        59.16
+      ],
+      "nearest": false
+    },
+    "masl": 30,
+    "validFrom": "1949-11-01T00:00:00.000Z",
+    "county": "ROGALAND",
+    "countyId": 11,
+    "municipality": "HJELMELAND",
+    "municipalityId": 1133,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01422"
+    ],
+    "wigosId": "0-20000-0-01422",
+    "sourceId": "SN45870:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN45870:0&referencetime=1949-11-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN98400",
+    "name": "MAKKAUR FYR",
+    "shortName": "Makkaur fyr",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1092,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        30.07,
+        70.7057
+      ],
+      "nearest": false
+    },
+    "masl": 9,
+    "validFrom": "1924-11-01T00:00:00.000Z",
+    "county": "FINNMARK",
+    "countyId": 20,
+    "municipality": "BÅTSFJORD",
+    "municipalityId": 2028,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01092"
+    ],
+    "wigosId": "0-20000-0-01092",
+    "sourceId": "SN98400:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN98400:0&referencetime=1924-11-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN99710",
+    "name": "BJØRNØYA",
+    "shortName": "Bjørnøya",
+    "country": "Svalbard og Jan Mayen",
+    "countryCode": "SJ",
+    "wmoId": 1028,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        19.005,
+        74.5167
+      ],
+      "nearest": false
+    },
+    "masl": 16,
+    "validFrom": "1919-12-01T00:00:00.000Z",
+    "county": "SVALBARD",
+    "countyId": 21,
+    "municipality": "SVALBARD",
+    "municipalityId": 2100,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01028",
+      "ENBJ",
+      "LBJ"
+    ],
+    "icaoCodes": [
+      "ENBJ"
+    ],
+    "shipCodes": [
+      "LBJ"
+    ],
+    "wigosId": "0-20000-0-01028",
+    "sourceId": "SN99710:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN99710:0&referencetime=1919-12-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN44560",
+    "name": "SOLA",
+    "shortName": "Sola",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1415,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        5.637,
+        58.8843
+      ],
+      "nearest": false
+    },
+    "masl": 7,
+    "validFrom": "1927-09-01T00:00:00.000Z",
+    "county": "ROGALAND",
+    "countyId": 11,
+    "municipality": "SOLA",
+    "municipalityId": 1124,
+    "stationHolders": [
+      "MET.NO",
+      "AVINOR"
+    ],
+    "externalIds": [
+      "01415",
+      "10.249.0.173",
+      "10.249.0.64",
+      "ENZV"
+    ],
+    "icaoCodes": [
+      "ENZV"
+    ],
+    "wigosId": "0-20000-0-01415",
+    "sourceId": "SN44560:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN44560:0&referencetime=1927-09-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN36560",
+    "name": "NELAUG",
+    "shortName": "Nelaug",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1459,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        8.63,
+        58.6582
+      ],
+      "nearest": false
+    },
+    "masl": 142,
+    "validFrom": "1960-08-01T00:00:00.000Z",
+    "county": "AUST-AGDER",
+    "countyId": 9,
+    "municipality": "ÅMLI",
+    "municipalityId": 929,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01459"
+    ],
+    "wigosId": "0-20000-0-01459",
+    "sourceId": "SN36560:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN36560:0&referencetime=1960-08-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN35860",
+    "name": "LYNGØR FYR",
+    "shortName": "Lyngør fyr",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1467,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        9.1479,
+        58.6361
+      ],
+      "nearest": false
+    },
+    "masl": 4,
+    "validFrom": "1920-12-01T00:00:00.000Z",
+    "county": "AUST-AGDER",
+    "countyId": 9,
+    "municipality": "TVEDESTRAND",
+    "municipalityId": 914,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01467",
+      "10.249.0.216"
+    ],
+    "wigosId": "0-20000-0-01467",
+    "sourceId": "SN35860:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN35860:0&referencetime=1920-12-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN6020",
+    "name": "FLISA II",
+    "shortName": "Flisa",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1392,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        12.0125,
+        60.6141
+      ],
+      "nearest": false
+    },
+    "masl": 185,
+    "validFrom": "1919-06-01T00:00:00.000Z",
+    "county": "HEDMARK",
+    "countyId": 4,
+    "municipality": "ÅSNES",
+    "municipalityId": 425,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01392"
+    ],
+    "wigosId": "0-20000-0-01392",
+    "sourceId": "SN6020:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN6020:0&referencetime=1919-06-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN60990",
+    "name": "VIGRA",
+    "shortName": "Vigra",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1210,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        6.115,
+        62.5617
+      ],
+      "nearest": false
+    },
+    "masl": 22,
+    "validFrom": "1958-07-01T00:00:00.000Z",
+    "county": "MØRE OG ROMSDAL",
+    "countyId": 15,
+    "municipality": "GISKE",
+    "municipalityId": 1532,
+    "stationHolders": [
+      "AVINOR"
+    ],
+    "externalIds": [
+      "01210",
+      "10.249.0.154",
+      "10.249.0.59",
+      "ENAL"
+    ],
+    "icaoCodes": [
+      "ENAL"
+    ],
+    "wigosId": "0-20000-0-01210",
+    "sourceId": "SN60990:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN60990:0&referencetime=1958-07-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN71990",
+    "name": "BUHOLMRÅSA FYR",
+    "shortName": "Buholmråsa fyr",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1259,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        10.455,
+        64.4013
+      ],
+      "nearest": false
+    },
+    "masl": 18,
+    "validFrom": "1963-07-01T00:00:00.000Z",
+    "county": "TRØNDELAG",
+    "countyId": 50,
+    "municipality": "OSEN",
+    "municipalityId": 5020,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01259",
+      "10.249.0.72"
+    ],
+    "wigosId": "0-20000-0-01259",
+    "sourceId": "SN71990:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN71990:0&referencetime=1963-07-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN10380",
+    "name": "RØROS LUFTHAVN",
+    "shortName": "Røros",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1288,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        11.3518,
+        62.5773
+      ],
+      "nearest": false
+    },
+    "masl": 625,
+    "validFrom": "1870-12-01T00:00:00.000Z",
+    "county": "TRØNDELAG",
+    "countyId": 50,
+    "municipality": "RØROS",
+    "municipalityId": 5025,
+    "stationHolders": [
+      "AVINOR"
+    ],
+    "externalIds": [
+      "01288",
+      "10.249.0.69",
+      "ENRO"
+    ],
+    "icaoCodes": [
+      "ENRO"
+    ],
+    "wigosId": "0-20000-0-01288",
+    "sourceId": "SN10380:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN10380:0&referencetime=1870-12-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN18700",
+    "name": "OSLO - BLINDERN",
+    "shortName": "Oslo (Blindern)",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1492,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        10.72,
+        59.9423
+      ],
+      "nearest": false
+    },
+    "masl": 94,
+    "validFrom": "1837-04-01T00:00:00.000Z",
+    "county": "OSLO",
+    "countyId": 3,
+    "municipality": "OSLO",
+    "municipalityId": 301,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01492",
+      "10.249.0.189",
+      "157.249.0.180:6785"
+    ],
+    "wigosId": "0-20000-0-01492",
+    "sourceId": "SN18700:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN18700:0&referencetime=1837-04-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN8140",
+    "name": "EVENSTAD",
+    "shortName": "Evenstad",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1383,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        11.0803,
+        61.4255
+      ],
+      "nearest": false
+    },
+    "masl": 257,
+    "validFrom": "1971-07-01T00:00:00.000Z",
+    "county": "HEDMARK",
+    "countyId": 4,
+    "municipality": "STOR-ELVDAL",
+    "municipalityId": 430,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01383"
+    ],
+    "sourceId": "SN8140:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN8140:0&referencetime=1971-07-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN15730",
+    "name": "BRÅTÅ - SLETTOM",
+    "shortName": "Bråtå",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1360,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        7.8955,
+        61.8957
+      ],
+      "nearest": false
+    },
+    "masl": 664,
+    "validFrom": "1965-10-01T00:00:00.000Z",
+    "county": "OPPLAND",
+    "countyId": 5,
+    "municipality": "SKJÅK",
+    "municipalityId": 513,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01360"
+    ],
+    "wigosId": "0-20000-0-01360",
+    "sourceId": "SN15730:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN15730:0&referencetime=1965-10-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN59800",
+    "name": "SVINØY FYR",
+    "shortName": "Svinøy fyr",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1205,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        5.268,
+        62.3293
+      ],
+      "nearest": false
+    },
+    "masl": 38,
+    "validFrom": "1955-07-01T00:00:00.000Z",
+    "county": "MØRE OG ROMSDAL",
+    "countyId": 15,
+    "municipality": "HERØY",
+    "municipalityId": 1515,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01205",
+      "10.249.1.56"
+    ],
+    "wigosId": "0-20000-0-01205",
+    "sourceId": "SN59800:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN59800:0&referencetime=1955-07-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN12680",
+    "name": "LILLEHAMMER - SÆTHERENGEN",
+    "shortName": "Lillehammer",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1378,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        10.4762,
+        61.0917
+      ],
+      "nearest": false
+    },
+    "masl": 240,
+    "validFrom": "1890-12-01T00:00:00.000Z",
+    "county": "OPPLAND",
+    "countyId": 5,
+    "municipality": "LILLEHAMMER",
+    "municipalityId": 501,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01378",
+      "10.249.1.155"
+    ],
+    "wigosId": "0-20000-0-01378",
+    "sourceId": "SN12680:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN12680:0&referencetime=1890-12-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN42810",
+    "name": "TONSTAD - NETTFED",
+    "shortName": "Tonstad (Øst)",
+    "country": "Norge",
+    "countryCode": "NO",
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        6.709,
+        58.6642
+      ],
+      "nearest": false
+    },
+    "masl": 55,
+    "validFrom": "1919-12-01T00:00:00.000Z",
+    "county": "VEST-AGDER",
+    "countyId": 10,
+    "municipality": "SIRDAL",
+    "municipalityId": 1046,
+    "stationHolders": [
+      "SIRA-KVINA KRAFTSELSKAP"
+    ],
+    "wigosId": "0-578-0-42810",
+    "sourceId": "SN42810:0",
+    "validTo": "1977-08-31T00:00:00.000Z",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN42810:0&referencetime=1919-12-01T00:00:00.000Z/1977-08-31T00:00:00.000Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN29720",
+    "name": "DAGALI LUFTHAVN",
+    "shortName": "Dagali LH",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1363,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        8.5263,
+        60.4188
+      ],
+      "nearest": false
+    },
+    "masl": 798,
+    "validFrom": "1920-07-01T00:00:00.000Z",
+    "county": "BUSKERUD",
+    "countyId": 6,
+    "municipality": "HOL",
+    "municipalityId": 620,
+    "stationHolders": [
+      "MET.NO",
+      "DAGALI FLYPLASS (GEILO LUFTHAVN)"
+    ],
+    "externalIds": [
+      "01363",
+      "10.249.0.43",
+      "1363",
+      "ENDI"
+    ],
+    "icaoCodes": [
+      "ENDI"
+    ],
+    "wigosId": "0-20000-0-01363",
+    "sourceId": "SN29720:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN29720:0&referencetime=1920-07-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN97251",
+    "name": "KARASJOK - MARKANNJARGA",
+    "shortName": "Karasjok",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1065,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        25.5023,
+        69.4635
+      ],
+      "nearest": false
+    },
+    "masl": 131,
+    "validFrom": "1876-12-01T00:00:00.000Z",
+    "county": "FINNMARK",
+    "countyId": 20,
+    "municipality": "KARASJOHKA-KARASJOK",
+    "municipalityId": 2021,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01065",
+      "10.249.0.20",
+      "10.249.0.221"
+    ],
+    "wigosId": "0-20000-0-01065",
+    "sourceId": "SN97251:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN97251:0&referencetime=1876-12-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN19710",
+    "name": "ASKER",
+    "shortName": "Asker - Sem",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1486,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        10.4358,
+        59.8558
+      ],
+      "nearest": false
+    },
+    "masl": 163,
+    "validFrom": "1913-07-01T00:00:00.000Z",
+    "county": "AKERSHUS",
+    "countyId": 2,
+    "municipality": "ASKER",
+    "municipalityId": 220,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01486",
+      "10.249.0.193",
+      "501151120"
+    ],
+    "sourceId": "SN19710:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN19710:0&referencetime=1913-07-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN43010",
+    "name": "EIK - HOVE",
+    "shortName": "Eik - Hove",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1425,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        6.5045,
+        58.507
+      ],
+      "nearest": false
+    },
+    "masl": 65,
+    "validFrom": "1968-05-01T00:00:00.000Z",
+    "county": "ROGALAND",
+    "countyId": 11,
+    "municipality": "LUND",
+    "municipalityId": 1112,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01425",
+      "10.249.1.24"
+    ],
+    "wigosId": "0-20000-0-01425",
+    "sourceId": "SN43010:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN43010:0&referencetime=1968-05-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN69100",
+    "name": "VÆRNES",
+    "shortName": "Værnes",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1271,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        10.9305,
+        63.4597
+      ],
+      "nearest": false
+    },
+    "masl": 12,
+    "validFrom": "1945-12-01T00:00:00.000Z",
+    "county": "TRØNDELAG",
+    "countyId": 50,
+    "municipality": "STJØRDAL",
+    "municipalityId": 5035,
+    "stationHolders": [
+      "MET.NO",
+      "AVINOR"
+    ],
+    "externalIds": [
+      "01271",
+      "10.249.0.13",
+      "10.249.1.47",
+      "ENVA"
+    ],
+    "icaoCodes": [
+      "ENVA"
+    ],
+    "wigosId": "0-20000-0-01271",
+    "sourceId": "SN69100:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN69100:0&referencetime=1945-12-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN75410",
+    "name": "NORDØYAN FYR",
+    "shortName": "Nordøyan fyr",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1262,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        10.5493,
+        64.7977
+      ],
+      "nearest": false
+    },
+    "masl": 33,
+    "validFrom": "1890-11-01T00:00:00.000Z",
+    "county": "TRØNDELAG",
+    "countyId": 50,
+    "municipality": "VIKNA",
+    "municipalityId": 5050,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01262",
+      "10.249.0.119"
+    ],
+    "wigosId": "0-20000-0-01262",
+    "sourceId": "SN75410:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN75410:0&referencetime=1890-11-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN17850",
+    "name": "ÅS",
+    "shortName": "Ås (NMBU)",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1463,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        10.7818,
+        59.6605
+      ],
+      "nearest": false
+    },
+    "masl": 92,
+    "validFrom": "1874-01-01T00:00:00.000Z",
+    "county": "AKERSHUS",
+    "countyId": 2,
+    "municipality": "ÅS",
+    "municipalityId": 214,
+    "stationHolders": [
+      "MET.NO",
+      "NORGES MILJØ- OG BIOVITENSKAPELIGE UNIVERSITET"
+    ],
+    "externalIds": [
+      "01463",
+      "1463"
+    ],
+    "wigosId": "0-20000-0-01463",
+    "sourceId": "SN17850:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN17850:0&referencetime=1874-01-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN17150",
+    "name": "RYGGE",
+    "shortName": "Rygge",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1494,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        10.798,
+        59.3742
+      ],
+      "nearest": false
+    },
+    "masl": 40,
+    "validFrom": "1933-12-01T00:00:00.000Z",
+    "county": "ØSTFOLD",
+    "countyId": 1,
+    "municipality": "RYGGE",
+    "municipalityId": 136,
+    "stationHolders": [
+      "MET.NO",
+      "AVINOR"
+    ],
+    "externalIds": [
+      "01494",
+      "10.249.0.11",
+      "10.249.0.155",
+      "ENRY"
+    ],
+    "icaoCodes": [
+      "ENRY"
+    ],
+    "wigosId": "0-20000-0-01494",
+    "sourceId": "SN17150:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN17150:0&referencetime=1933-12-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN63705",
+    "name": "OPPDAL - SÆTER",
+    "shortName": "Oppdal",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1245,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        9.6667,
+        62.6043
+      ],
+      "nearest": false
+    },
+    "masl": 604,
+    "validFrom": "1975-12-01T00:00:00.000Z",
+    "county": "TRØNDELAG",
+    "countyId": 50,
+    "municipality": "OPPDAL",
+    "municipalityId": 5021,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01245",
+      "10.249.0.148"
+    ],
+    "wigosId": "0-20000-0-01245",
+    "sourceId": "SN63705:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN63705:0&referencetime=1975-12-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN90450",
+    "name": "TROMSØ",
+    "shortName": "Tromsø",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1026,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        18.9368,
+        69.6536
+      ],
+      "nearest": false
+    },
+    "masl": 100,
+    "validFrom": "1867-09-01T00:00:00.000Z",
+    "county": "TROMS",
+    "countyId": 19,
+    "municipality": "TROMSØ",
+    "municipalityId": 1902,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01026",
+      "1"
+    ],
+    "wigosId": "0-20000-0-01026",
+    "sourceId": "SN90450:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN90450:0&referencetime=1867-09-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN12550",
+    "name": "KISE PA HEDMARK",
+    "shortName": "Kise på Hedmark",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1382,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        10.8055,
+        60.7733
+      ],
+      "nearest": false
+    },
+    "masl": 128,
+    "validFrom": "1950-12-01T00:00:00.000Z",
+    "county": "HEDMARK",
+    "countyId": 4,
+    "municipality": "RINGSAKER",
+    "municipalityId": 412,
+    "stationHolders": [
+      "NIBIO"
+    ],
+    "externalIds": [
+      "01382",
+      "1382",
+      "21"
+    ],
+    "wigosId": "0-20000-0-01382",
+    "sourceId": "SN12550:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN12550:0&referencetime=1950-12-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN80700",
+    "name": "GLOMFJORD",
+    "shortName": "Glomfjord",
+    "country": "Norge",
+    "countryCode": "NO",
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        13.9793,
+        66.8102
+      ],
+      "nearest": false
+    },
+    "masl": 39,
+    "validFrom": "1915-12-01T00:00:00.000Z",
+    "county": "NORDLAND",
+    "countyId": 18,
+    "municipality": "MELØY",
+    "municipalityId": 1837,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "10.249.0.213"
+    ],
+    "wigosId": "0-578-0-80700",
+    "sourceId": "SN80700:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN80700:0&referencetime=1915-12-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN99840",
+    "name": "SVALBARD LUFTHAVN",
+    "shortName": "Svalbard LH",
+    "country": "Svalbard og Jan Mayen",
+    "countryCode": "SJ",
+    "wmoId": 1008,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        15.5015,
+        78.2453
+      ],
+      "nearest": false
+    },
+    "masl": 28,
+    "validFrom": "1898-09-01T00:00:00.000Z",
+    "county": "SVALBARD",
+    "countyId": 21,
+    "municipality": "SVALBARD",
+    "municipalityId": 2100,
+    "stationHolders": [
+      "MET.NO",
+      "AVINOR"
+    ],
+    "externalIds": [
+      "01008",
+      "10.249.0.179",
+      "10.249.0.28",
+      "10.249.0.67",
+      "ENSB"
+    ],
+    "icaoCodes": [
+      "ENSB"
+    ],
+    "wigosId": "0-20000-0-01008",
+    "sourceId": "SN99840:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN99840:0&referencetime=1898-09-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN42160",
+    "name": "LISTA FYR",
+    "shortName": "Lista fyr",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1427,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        6.5675,
+        58.109
+      ],
+      "nearest": false
+    },
+    "masl": 14,
+    "validFrom": "1919-07-01T00:00:00.000Z",
+    "county": "VEST-AGDER",
+    "countyId": 10,
+    "municipality": "FARSUND",
+    "municipalityId": 1003,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01427",
+      "10.249.0.211"
+    ],
+    "wigosId": "0-20000-0-01427",
+    "sourceId": "SN42160:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN42160:0&referencetime=1919-07-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN27500",
+    "name": "FÆRDER FYR",
+    "shortName": "Færder fyr",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1482,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        10.5242,
+        59.0272
+      ],
+      "nearest": false
+    },
+    "masl": 6,
+    "validFrom": "1860-12-01T00:00:00.000Z",
+    "county": "VESTFOLD",
+    "countyId": 7,
+    "municipality": "FÆRDER",
+    "municipalityId": 729,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01482",
+      "10.249.0.189"
+    ],
+    "wigosId": "0-20000-0-01482",
+    "sourceId": "SN27500:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN27500:0&referencetime=1860-12-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN49490",
+    "name": "ULLENSVANG FORSØKSGARD",
+    "shortName": "Ullensvang",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1342,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        6.6538,
+        60.3185
+      ],
+      "nearest": false
+    },
+    "masl": 12,
+    "validFrom": "2009-01-01T00:00:00.000Z",
+    "county": "HORDALAND",
+    "countyId": 12,
+    "municipality": "ULLENSVANG",
+    "municipalityId": 1231,
+    "stationHolders": [
+      "NIBIO"
+    ],
+    "externalIds": [
+      "01342",
+      "1342",
+      "40"
+    ],
+    "wigosId": "0-20000-0-01342",
+    "sourceId": "SN49490:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN49490:0&referencetime=2009-01-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN52860",
+    "name": "TAKLE",
+    "shortName": "Takle",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1319,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        5.3813,
+        61.0272
+      ],
+      "nearest": false
+    },
+    "masl": 38,
+    "validFrom": "1950-07-01T00:00:00.000Z",
+    "county": "SOGN OG FJORDANE",
+    "countyId": 14,
+    "municipality": "GULEN",
+    "municipalityId": 1411,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01319",
+      "10.249.0.89"
+    ],
+    "wigosId": "0-20000-0-01319",
+    "sourceId": "SN52860:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN52860:0&referencetime=1950-07-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN16560",
+    "name": "DOMBÅS - NORDIGARD",
+    "shortName": "Dombås",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1233,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        9.1147,
+        62.07165
+      ],
+      "nearest": false
+    },
+    "masl": 638,
+    "validFrom": "1864-08-01T00:00:00.000Z",
+    "county": "OPPLAND",
+    "countyId": 5,
+    "municipality": "DOVRE",
+    "municipalityId": 511,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01233"
+    ],
+    "wigosId": "0-20000-0-01233",
+    "sourceId": "SN16560:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN16560:0&referencetime=1864-08-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN80610",
+    "name": "MYKEN",
+    "shortName": "Myken",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1115,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        12.486,
+        66.7628
+      ],
+      "nearest": false
+    },
+    "masl": 17,
+    "validFrom": "1920-07-01T00:00:00.000Z",
+    "county": "NORDLAND",
+    "countyId": 18,
+    "municipality": "RØDØY",
+    "municipalityId": 1836,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01115",
+      "10.249.0.230"
+    ],
+    "wigosId": "0-20000-0-01115",
+    "sourceId": "SN80610:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN80610:0&referencetime=1920-07-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN11500",
+    "name": "ØSTRE TOTEN - APELSVOLL",
+    "shortName": "Apelsvoll",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1381,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        10.8695,
+        60.7002
+      ],
+      "nearest": false
+    },
+    "masl": 264,
+    "validFrom": "1930-09-01T00:00:00.000Z",
+    "county": "OPPLAND",
+    "countyId": 5,
+    "municipality": "ØSTRE TOTEN",
+    "municipalityId": 528,
+    "stationHolders": [
+      "NIBIO"
+    ],
+    "externalIds": [
+      "01381",
+      "1381",
+      "22"
+    ],
+    "wigosId": "0-20000-0-01381",
+    "sourceId": "SN11500:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN11500:0&referencetime=1930-09-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN38140",
+    "name": "LANDVIK",
+    "shortName": "Landvik",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1464,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        8.5225,
+        58.34
+      ],
+      "nearest": false
+    },
+    "masl": 6,
+    "validFrom": "1956-12-01T00:00:00.000Z",
+    "county": "AUST-AGDER",
+    "countyId": 9,
+    "municipality": "GRIMSTAD",
+    "municipalityId": 904,
+    "stationHolders": [
+      "NIBIO"
+    ],
+    "externalIds": [
+      "01464",
+      "1464",
+      "24"
+    ],
+    "wigosId": "0-20000-0-01464",
+    "sourceId": "SN38140:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN38140:0&referencetime=1956-12-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN69380",
+    "name": "MERÅKER - VARDETUN",
+    "shortName": "Meråker",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1293,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        11.7277,
+        63.4115
+      ],
+      "nearest": false
+    },
+    "masl": 169,
+    "validFrom": "1935-07-01T00:00:00.000Z",
+    "county": "TRØNDELAG",
+    "countyId": 50,
+    "municipality": "MERÅKER",
+    "municipalityId": 5034,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01293"
+    ],
+    "wigosId": "0-20000-0-01293",
+    "sourceId": "SN69380:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN69380:0&referencetime=1935-07-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN39100",
+    "name": "OKSØY FYR",
+    "shortName": "Oksøy fyr",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1448,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        8.0532,
+        58.0732
+      ],
+      "nearest": false
+    },
+    "masl": 9,
+    "validFrom": "1869-11-01T00:00:00.000Z",
+    "county": "VEST-AGDER",
+    "countyId": 10,
+    "municipality": "KRISTIANSAND",
+    "municipalityId": 1001,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01448",
+      "10.249.1.65"
+    ],
+    "wigosId": "0-20000-0-01448",
+    "sourceId": "SN39100:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN39100:0&referencetime=1869-11-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN54110",
+    "name": "LÆRDAL IV",
+    "shortName": "Lærdal",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1355,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        7.5025,
+        61.1033
+      ],
+      "nearest": false
+    },
+    "masl": 2,
+    "validFrom": "1869-08-01T00:00:00.000Z",
+    "county": "SOGN OG FJORDANE",
+    "countyId": 14,
+    "municipality": "LÆRDAL",
+    "municipalityId": 1422,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01355",
+      "10.249.0.106"
+    ],
+    "wigosId": "0-20000-0-01355",
+    "sourceId": "SN54110:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN54110:0&referencetime=1869-08-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN98550",
+    "name": "VARDØ RADIO",
+    "shortName": "Vardø radio",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1098,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        31.0962,
+        70.3707
+      ],
+      "nearest": false
+    },
+    "masl": 10,
+    "validFrom": "1839-12-01T00:00:00.000Z",
+    "county": "FINNMARK",
+    "countyId": 20,
+    "municipality": "VARDØ",
+    "municipalityId": 2002,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01098",
+      "10.249.0.26",
+      "10.249.1.53",
+      "LGV"
+    ],
+    "shipCodes": [
+      "LGV"
+    ],
+    "sourceId": "SN98550:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN98550:0&referencetime=1839-12-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN93140",
+    "name": "ALTA LUFTHAVN",
+    "shortName": "Alta LH",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1049,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        23.3582,
+        69.9775
+      ],
+      "nearest": false
+    },
+    "masl": 3,
+    "validFrom": "1872-12-01T00:00:00.000Z",
+    "county": "FINNMARK",
+    "countyId": 20,
+    "municipality": "ALTA",
+    "municipalityId": 2012,
+    "stationHolders": [
+      "MET.NO",
+      "AVINOR"
+    ],
+    "externalIds": [
+      "01049",
+      "10.249.0.50",
+      "ENAT"
+    ],
+    "icaoCodes": [
+      "ENAT"
+    ],
+    "wigosId": "0-20000-0-01049",
+    "sourceId": "SN93140:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN93140:0&referencetime=1872-12-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN39040",
+    "name": "KJEVIK",
+    "shortName": "Kjevik",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1452,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        8.0767,
+        58.2
+      ],
+      "nearest": false
+    },
+    "masl": 12,
+    "validFrom": "1922-11-01T00:00:00.000Z",
+    "county": "VEST-AGDER",
+    "countyId": 10,
+    "municipality": "KRISTIANSAND",
+    "municipalityId": 1001,
+    "stationHolders": [
+      "MET.NO",
+      "AVINOR"
+    ],
+    "externalIds": [
+      "01452",
+      "10.249.0.47",
+      "ENCN"
+    ],
+    "icaoCodes": [
+      "ENCN"
+    ],
+    "wigosId": "0-20000-0-01452",
+    "sourceId": "SN39040:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN39040:0&referencetime=1922-11-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN99950",
+    "name": "JAN MAYEN",
+    "shortName": "Jan Mayen",
+    "country": "Svalbard og Jan Mayen",
+    "countryCode": "SJ",
+    "wmoId": 1001,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        -8.669,
+        70.9394
+      ],
+      "nearest": false
+    },
+    "masl": 10,
+    "validFrom": "1921-01-01T00:00:00.000Z",
+    "county": "JAN MAYEN",
+    "countyId": 22,
+    "municipality": "JAN MAYEN",
+    "municipalityId": 2211,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01001",
+      "ENJA"
+    ],
+    "icaoCodes": [
+      "ENJA"
+    ],
+    "wigosId": "0-20000-0-01001",
+    "sourceId": "SN99950:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN99950:0&referencetime=1921-01-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN95350",
+    "name": "BANAK",
+    "shortName": "Banak",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1059,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        24.99,
+        70.06
+      ],
+      "nearest": false
+    },
+    "masl": 5,
+    "validFrom": "1956-12-01T00:00:00.000Z",
+    "county": "FINNMARK",
+    "countyId": 20,
+    "municipality": "PORSANGER",
+    "municipalityId": 2020,
+    "stationHolders": [
+      "AVINOR"
+    ],
+    "externalIds": [
+      "01059",
+      "10.249.0.51",
+      "ENNA"
+    ],
+    "icaoCodes": [
+      "ENNA"
+    ],
+    "wigosId": "0-20000-0-01059",
+    "sourceId": "SN95350:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN95350:0&referencetime=1956-12-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN1400",
+    "name": "BREKKE SLUSE",
+    "shortName": "Brekke sluse",
+    "country": "Norge",
+    "countryCode": "NO",
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        11.5583,
+        59.1477
+      ],
+      "nearest": false
+    },
+    "masl": 114,
+    "validFrom": "1935-12-01T00:00:00.000Z",
+    "county": "ØSTFOLD",
+    "countyId": 1,
+    "municipality": "HALDEN",
+    "municipalityId": 101,
+    "stationHolders": [
+      "HALDENVASSDRAGETS BRUKSEIERFORENING"
+    ],
+    "wigosId": "0-578-0-1400",
+    "sourceId": "SN1400:0",
+    "validTo": "1965-05-31T00:00:00.000Z",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN1400:0&referencetime=1935-12-01T00:00:00.000Z/1965-05-31T00:00:00.000Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN57770",
+    "name": "YTTERØYANE FYR",
+    "shortName": "Ytterøyane fyr",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1304,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        4.6817,
+        61.5717
+      ],
+      "nearest": false
+    },
+    "masl": 26,
+    "validFrom": "1921-09-01T00:00:00.000Z",
+    "county": "SOGN OG FJORDANE",
+    "countyId": 14,
+    "municipality": "FLORA",
+    "municipalityId": 1401,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01304",
+      "10.249.1.34"
+    ],
+    "wigosId": "0-20000-0-01304",
+    "sourceId": "SN57770:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN57770:0&referencetime=1921-09-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN700",
+    "name": "DREVSJØ",
+    "shortName": "Drevsjø",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1393,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        12.048,
+        61.8872
+      ],
+      "nearest": false
+    },
+    "masl": 672,
+    "validFrom": "1947-11-01T00:00:00.000Z",
+    "county": "HEDMARK",
+    "countyId": 4,
+    "municipality": "ENGERDAL",
+    "municipalityId": 434,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01393"
+    ],
+    "wigosId": "0-20000-0-01393",
+    "sourceId": "SN700:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN700:0&referencetime=1947-11-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN92350",
+    "name": "NORDSTRAUM I KVÆNANGEN",
+    "shortName": "Nordstraum",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1045,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        21.8958,
+        69.8362
+      ],
+      "nearest": false
+    },
+    "masl": 20,
+    "validFrom": "1965-08-01T00:00:00.000Z",
+    "county": "TROMS",
+    "countyId": 19,
+    "municipality": "KVÆNANGEN",
+    "municipalityId": 1943,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01045"
+    ],
+    "sourceId": "SN92350:0",
+    "validTo": "2017-07-31T00:00:00.000Z",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN92350:0&referencetime=1965-08-01T00:00:00.000Z/2017-07-31T00:00:00.000Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN60500",
+    "name": "TAFJORD",
+    "shortName": "Tafjord",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1218,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        7.4218,
+        62.2305
+      ],
+      "nearest": false
+    },
+    "masl": 11,
+    "validFrom": "1930-07-01T00:00:00.000Z",
+    "county": "MØRE OG ROMSDAL",
+    "countyId": 15,
+    "municipality": "NORDDAL",
+    "municipalityId": 1524,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01218",
+      "10.249.0.141"
+    ],
+    "wigosId": "0-20000-0-01218",
+    "sourceId": "SN60500:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN60500:0&referencetime=1930-07-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN31620",
+    "name": "MØSSTRAND II",
+    "shortName": "Møsstrand",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1450,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        8.1785,
+        59.8397
+      ],
+      "nearest": false
+    },
+    "masl": 977,
+    "validFrom": "1963-12-01T00:00:00.000Z",
+    "county": "TELEMARK",
+    "countyId": 8,
+    "municipality": "VINJE",
+    "municipalityId": 834,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01450"
+    ],
+    "wigosId": "0-20000-0-01450",
+    "sourceId": "SN31620:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN31620:0&referencetime=1963-12-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN37230",
+    "name": "TVEITSUND",
+    "shortName": "Tveitsund",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1455,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        8.5187,
+        59.0257
+      ],
+      "nearest": false
+    },
+    "masl": 252,
+    "validFrom": "1944-06-01T00:00:00.000Z",
+    "county": "TELEMARK",
+    "countyId": 8,
+    "municipality": "NISSEDAL",
+    "municipalityId": 830,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01455",
+      "10.249.0.109"
+    ],
+    "wigosId": "0-20000-0-01455",
+    "sourceId": "SN37230:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN37230:0&referencetime=1944-06-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN65940",
+    "name": "SULA",
+    "shortName": "Sula",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1228,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        8.4667,
+        63.8467
+      ],
+      "nearest": false
+    },
+    "masl": 5,
+    "validFrom": "1930-12-01T00:00:00.000Z",
+    "county": "TRØNDELAG",
+    "countyId": 50,
+    "municipality": "FRØYA",
+    "municipalityId": 5014,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01228"
+    ],
+    "wigosId": "0-20000-0-01228",
+    "sourceId": "SN65940:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN65940:0&referencetime=1930-12-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN41770",
+    "name": "LINDESNES FYR",
+    "shortName": "Lindesnes fyr",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1436,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        7.048,
+        57.9815
+      ],
+      "nearest": false
+    },
+    "masl": 16,
+    "validFrom": "1921-12-01T00:00:00.000Z",
+    "county": "VEST-AGDER",
+    "countyId": 10,
+    "municipality": "LINDESNES",
+    "municipalityId": 1029,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01436",
+      "10.249.1.145"
+    ],
+    "wigosId": "0-20000-0-01436",
+    "sourceId": "SN41770:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN41770:0&referencetime=1921-12-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN71550",
+    "name": "ØRLAND III",
+    "shortName": "Ørland",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1241,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        9.6105,
+        63.7045
+      ],
+      "nearest": false
+    },
+    "masl": 10,
+    "validFrom": "1935-12-01T00:00:00.000Z",
+    "county": "TRØNDELAG",
+    "countyId": 50,
+    "municipality": "ØRLAND",
+    "municipalityId": 5015,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01241",
+      "10.249.0.56",
+      "ENOL"
+    ],
+    "icaoCodes": [
+      "ENOL"
+    ],
+    "wigosId": "0-20000-0-01241",
+    "sourceId": "SN71550:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN71550:0&referencetime=1935-12-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN94500",
+    "name": "FRUHOLMEN FYR",
+    "shortName": "Fruholmen fyr",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1055,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        23.9817,
+        71.0937
+      ],
+      "nearest": false
+    },
+    "masl": 13,
+    "validFrom": "1920-12-01T00:00:00.000Z",
+    "county": "FINNMARK",
+    "countyId": 20,
+    "municipality": "MÅSØY",
+    "municipalityId": 2018,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01055",
+      "10.249.0.171"
+    ],
+    "wigosId": "0-20000-0-01055",
+    "sourceId": "SN94500:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN94500:0&referencetime=1920-12-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN84900",
+    "name": "BJØRNFJELL",
+    "shortName": "Bjørnfjell",
+    "country": "Norge",
+    "countryCode": "NO",
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        18.0767,
+        68.4323
+      ],
+      "nearest": false
+    },
+    "masl": 512,
+    "validFrom": "1922-12-01T00:00:00.000Z",
+    "county": "NORDLAND",
+    "countyId": 18,
+    "municipality": "NARVIK",
+    "municipalityId": 1805,
+    "stationHolders": [
+      "JERNBANEVERKET"
+    ],
+    "wigosId": "0-578-0-84900",
+    "sourceId": "SN84900:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN84900:0&referencetime=1922-12-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN99910",
+    "name": "NY-ÅLESUND",
+    "shortName": "Ny-Ålesund",
+    "country": "Svalbard og Jan Mayen",
+    "countryCode": "SJ",
+    "wmoId": 1007,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        11.9312,
+        78.9243
+      ],
+      "nearest": false
+    },
+    "masl": 8,
+    "validFrom": "1934-09-01T00:00:00.000Z",
+    "county": "SVALBARD",
+    "countyId": 21,
+    "municipality": "SVALBARD",
+    "municipalityId": 2100,
+    "stationHolders": [
+      "MET.NO",
+      "STIFTUNG ALFRED-WEGENER-INSTITUT FUR POLAR- UND MEERESFORSCHUNG"
+    ],
+    "externalIds": [
+      "01007",
+      "193.156.10.28"
+    ],
+    "wigosId": "0-20000-0-01007",
+    "sourceId": "SN99910:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN99910:0&referencetime=1934-09-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN89350",
+    "name": "BARDUFOSS",
+    "shortName": "Bardufoss",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1023,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        18.5437,
+        69.0577
+      ],
+      "nearest": false
+    },
+    "masl": 76,
+    "validFrom": "1933-08-01T00:00:00.000Z",
+    "county": "TROMS",
+    "countyId": 19,
+    "municipality": "MÅLSELV",
+    "municipalityId": 1924,
+    "stationHolders": [
+      "MET.NO",
+      "AVINOR"
+    ],
+    "externalIds": [
+      "01023",
+      "10.249.0.36",
+      "10.249.1.46",
+      "ENDU"
+    ],
+    "icaoCodes": [
+      "ENDU"
+    ],
+    "wigosId": "0-20000-0-01023",
+    "sourceId": "SN89350:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN89350:0&referencetime=1933-08-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  },
+  {
+    "@type": "SensorSystem",
+    "id": "SN86500",
+    "name": "SORTLAND",
+    "shortName": "Sortland",
+    "country": "Norge",
+    "countryCode": "NO",
+    "wmoId": 1167,
+    "geometry": {
+      "@type": "Point",
+      "coordinates": [
+        15.4157,
+        68.7033
+      ],
+      "nearest": false
+    },
+    "masl": 3,
+    "validFrom": "1957-09-01T00:00:00.000Z",
+    "county": "NORDLAND",
+    "countyId": 18,
+    "municipality": "SORTLAND",
+    "municipalityId": 1870,
+    "stationHolders": [
+      "MET.NO"
+    ],
+    "externalIds": [
+      "01167",
+      "10.249.0.203"
+    ],
+    "wigosId": "0-20000-0-01167",
+    "sourceId": "SN86500:0",
+    "timeOffset": "PT0H",
+    "timeResolution": "P1M",
+    "timeSeriesId": 0,
+    "elementId": "best_estimate_mean(air_temperature_anomaly P1M 1961_1990)",
+    "unit": "degC",
+    "performanceCategory": "C",
+    "exposureCategory": "2",
+    "status": "Authoritative",
+    "uri": "https://frost.met.noobservations/v0.jsonld?sources=SN86500:0&referencetime=1957-09-01T00:00:00.000Z/9999-12-31T23:59:59Z&elements=best_estimate_mean(air_temperature_anomaly P1M 1961_1990)&timeoffsets=PT0H&timeresolutions=P1M&timeseriesids=0&performancecategories=C&exposurecategories=2"
+  }
+]

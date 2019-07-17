@@ -1,6 +1,7 @@
 *.pyc
-*/__pycache__/*
-apis/data/archive
-apis/data/frost_cache.json
+*/__pycache__
+projects/data/archive
+projects/data/frost_cache.json
 access.log
 error.log
+*.DS_Store

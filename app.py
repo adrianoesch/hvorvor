@@ -1,11 +1,11 @@
 import os, traceback, sys, json, base64
 from flask import Flask, jsonify, request, Response, send_from_directory
-from apis.hvor_mye_warmere import hvor_mye_warmere
-from apis.skiturer import skiturer
+from projects.hvor_mye_warmere.main import hvor_mye_warmere
+from projects.skiturer import skiturer
 
 app = Flask(__name__,static_folder='public')
 
-# add skiturer routes
+# routes
 app.register_blueprint(skiturer, url_prefix='/skiturer-norge')
 app.register_blueprint(hvor_mye_warmere, url_prefix='/hvor-mye-warmere')
 

@@ -181,7 +181,7 @@ function render(response){
   let station = response.source_coords
   let start_year = response.annual[0]['referenceTime'].slice(0,4)
   document.getElementById('text').innerHTML =
-    '<p style="font-size:28px;">Gjennomsnittlig lufttemperatur i '+response.location_name+' har '+(response.difference>0 ? 'økte' : 'gikk ned')+' med '+response.difference.toFixed(1)+'°C '+
+    '<p style="font-size:28px;">Gjennomsnittlig lufttemperatur i '+response.location_name+(response.difference>0 ? ' økte' : ' gikk ned')+' med '+response.difference.toFixed(1)+'°C '+
     'mellom '+start_year+' og 2018.</p>'+
     '<p>Denne observasjonen er basert på data fra en meteorologisk stasjon '+response.distance_in_km.toFixed(1)+' km fra hjembyen din '+
     '(se <a target="_blank" href="https://www.google.com/maps/search/'+station.lat.toString()+','+station.lng.toString()+'">plassering</a>). '+

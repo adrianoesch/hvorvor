@@ -69,13 +69,16 @@ select{
 <div>
 </body>
 <script>
+const is_dev = window.location.href.indexOf('localhost')>0
 function render(response){
   var chart = document.getElementById('chart')
   if(!response.success){
     chart.style.display='none'
     return
   }
-  console.log(response)
+  if(is_dev){
+    console.log(response)
+  }
   var plotData =  [{
     x: response.annual.map(i=>parseInt(i.referenceTime.slice(0,4))),
     y: response.annual.map(i=>i.value),
@@ -239,8 +242,8 @@ function init(){
   el.textContent = '';
   birthYearInput.appendChild(el);
   birthYearInput.onchange = update_year
-  birthYearInput.value = window.location.href.indexOf('localhost')>0 ? '1980':'';
-  current_year = window.location.href.indexOf('localhost')>0 ? 1980:null;
+  birthYearInput.value = is_dev>0 ? '1980':'';
+  current_year = is_dev ? 1980:null;
   autocomplete.setFields(['address_components', 'geometry', 'icon', 'name']);
   autocomplete.setComponentRestrictions({'country':'NO'});
   autocomplete.addListener('place_changed', update_place)

@@ -80,7 +80,7 @@ function render(response){
     x: response.annual.map(i=>parseInt(i.referenceTime.slice(0,4))),
     y: response.annual.map(i=>i.value),
     type:'line',
-    name: 'årlig lufttemperatur',
+    name: 'årlig gjennomsnitt',
     line:{
       color : 'rgb(254, 127, 127)',
       width:1
@@ -106,7 +106,7 @@ function render(response){
         y: 1.1
       },
       yaxis: {
-        title:'grader celsius (°C)'
+        title:'lufttemperatur (°C)'
       },
       shapes : [{
             'type': 'line',

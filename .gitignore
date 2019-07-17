@@ -1,1 +1,3 @@
 apis/data/archive
+apis/data/forst_cache.json
+*.pyc

@@ -21,6 +21,7 @@ def route():
     lat = float(request.args.get('lat'))
     lng = float(request.args.get('lng'))
     year = int(request.args.get('year'))
+    name = request.args.get('name')
     sources_time_filtered = [(k,(v['geometry']['coordinates'][1],v['geometry']['coordinates'][0])) for k,v in sources.items() if year-5 >= int(v['from'][:4])]
     sources_dists = [ ( i[0], i[1], distance((lat,lng),i[1]).km ) for i in sources_time_filtered]
     sources_dists.sort(key = lambda i :i[2])
@@ -33,6 +34,7 @@ def route():
     difference = time_series['annual_rolling'][-1]['value']-time_series['annual_rolling'][0]['value']
     return jsonify({
             'success':'True',
+            'location_name':name,
             'request_coords': {
                 'lat':lat,
                 'lng':lng

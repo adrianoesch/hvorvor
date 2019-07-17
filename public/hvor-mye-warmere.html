@@ -15,7 +15,7 @@ a{
   color:inherit;
 }
 .label{
-  width:150px;
+  margin-right:10px;
   display: inline-block;
   font-size: 20px;
 }
@@ -26,6 +26,7 @@ input{
 select{
   font-size: 20px;
   font-weight: 300;
+  margin-right:50px;
 }
 #response{
   margin-top: 100px;
@@ -35,8 +36,12 @@ select{
 <body>
 <div id="container">
   <h1 style="font-size:43px;">Hvor mye varmere har din hjemby blitt siden du ble født?</h1>
-  <p><span class="label">Fødselsår:</span><select></select></p>
-  <p><span class="label">Hiemby:</span><input type='text' size="40" value=''></input></p>
+  <p>
+    <span class="label">Fødselsår:</span>
+    <select></select>
+    <span class="label">Hiemby:</span>
+    <input type='text' size="30" value=''></input>
+  </p>
   <div id='response'>
     <div id='chart'></div>
     <div id='text'></div>
@@ -73,7 +78,7 @@ function render(response){
   let start_value = response.annual_rolling[0].value
   let end_value = response.annual_rolling[response.annual_rolling.length-1].value
   var layout = {
-      margin: { t: 0,r:70,l:60 },
+      margin: { t: 0,r:80,l:60 },
       showLegend:true,
       legend: {
         orientation:'h',
@@ -87,7 +92,7 @@ function render(response){
             'type': 'line',
             'xref':'paper',
             'x0': 0,
-            'x1': 1.05,
+            'x1': 1.03,
             'yref':'y',
             'y0': start_value,
             'y1': start_value,
@@ -96,44 +101,57 @@ function render(response){
                 'width': 1,
                 'dash':'dash'
             }
+        // },{
+        //       'type': 'line',
+        //       'xref':'paper',
+        //       'x0': .97,
+        //       'x1': 1.03,
+        //       'yref':'y',
+        //       'y0': end_value,
+        //       'y1': end_value,
+        //       'line': {
+        //           'color': 'rgba(111, 111, 111, 1)',
+        //           'width': 1,
+        //           'dash':'dash'
+        //       }
         },{
-              'type': 'line',
-              'xref':'paper',
-              'x0': 0,
-              'x1': 1.05,
-              'yref':'y',
-              'y0': end_value,
-              'y1': end_value,
-              'line': {
-                  'color': 'rgba(111, 111, 111, 1)',
-                  'width': 1,
-                  'dash':'dash'
-              }
+          'type': 'line',
+          'xref':'paper',
+          'x0': 1.025,
+          'x1': 1.025,
+          'yref':'y',
+          'y0': start_value,
+          'y1': end_value,
+          'line': {
+              'color': 'rgb(176, 32, 32)',
+              'width': 3,
+          }
         },{
-              'type': 'arrow',
-              'xref':'paper',
-              'x0': 1.025,
-              'x1': 1.025,
-              'yref':'y',
-              'y0': start_value,
-              'y1': end_value,
-              'line': {
-                  'color': 'rgb(176, 32, 32)',
-                  'width': 3,
-              }
+          'type': 'path',
+          'path':'M0,0 L-4,-4 H4,-4 Z',
+          'xsizemode':'pixel',
+          'ysizemode':'pixel',
+          'xanchor': 1.025,
+          'yref':'y',
+          'xref':'paper',
+          'yanchor': end_value,
+          'line': {
+              'color': 'rgb(176, 32, 32)',
+              'width': 3,
+          }
         }],
         annotations : [{
-          'yref':'y',
-          'y':start_value+((end_value-start_value)/2),
-          'xref':'paper',
-          'x':1.125,
-          'showarrow':false,
-          'text':(response.difference>0 ? '+' : '') + response.difference.toFixed(1)+'°C',
-          'textposition':'bottom right',
-          'font':{
-            'size':14,
-            'color':'rgb(176, 32, 32)'
-          }
+            'yref':'y',
+            'y':start_value+((end_value-start_value)/2),
+            'xref':'paper',
+            'x':1.13,
+            'showarrow':false,
+            'text':'<b>'+(response.difference>0 ? '+' : '') + response.difference.toFixed(1)+'°C</b>',
+            'textposition':'right',
+            'font':{
+              'size':14,
+              'color':'rgb(176, 32, 32)'
+            }
         }]
   };
   var config ={
@@ -143,9 +161,9 @@ function render(response){
   let station = response.source_coords
   let start_year = response.annual[0]['referenceTime'].slice(0,4)
   document.getElementById('text').innerHTML =
-    '<p style="font-size:28px;">Gjennomsnittlig lufttemperatur på fødestedet ditt har '+(response.difference>0 ? 'økt' : 'redusert')+' med '+response.difference.toFixed(1)+'°C '+
+    '<p style="font-size:28px;">Gjennomsnittlig lufttemperatur i '+response.location_name+' har '+(response.difference>0 ? 'økt' : 'redusert')+' med '+response.difference.toFixed(1)+'°C '+
     'mellom '+start_year+' og 2018.</p>'+
-    '<p>Denne observasjonen er basert på data fra en meteorologisk stasjon '+response.distance_in_km.toFixed(1)+' km fra fødestedet ditt '+
+    '<p>Denne observasjonen er basert på data fra en meteorologisk stasjon '+response.distance_in_km.toFixed(1)+' km fra hjembyen din '+
     '(se <a target="_blank" href="https://www.google.com/maps/search/'+station.lat.toString()+','+station.lng.toString()+'">plassering</a>). '+
     'Dataene ble levert av <a target="_blank" href="https://frost.met.no/index.html">Frost</a>, en tjeneste fra MET Norge.</p>';
 
@@ -159,7 +177,11 @@ function update_year(e){
 function update_place(place){
   var place = autocomplete.getPlace();
   var location = place.geometry.location;
-  var location = {lat:location.lat(),lng:location.lng()};
+  var location = {
+    lat:location.lat(),
+    lng:location.lng(),
+    name: place.name
+  };
   current_location = location;
   update(current_location,current_year)
 };
@@ -177,6 +199,7 @@ function update(location,year){
   let url = './hvor-mye-warmere/'+
     '?lat='+location.lat.toString()+
     '&lng='+location.lng.toString()+
+    '&name='+location.name+
     '&year='+year.toString();
   fetch(url)
     .then(r=>r.json())
@@ -196,7 +219,8 @@ function init(){
   el.textContent = '';
   birthYearInput.appendChild(el);
   birthYearInput.onchange = update_year
-  birthYearInput.value = ''
+  birthYearInput.value = window.location.href.indexOf('localhost')>0 ? '1980':'';
+  current_year = window.location.href.indexOf('localhost')>0 ? 1980:null;
   autocomplete.setFields(['address_components', 'geometry', 'icon', 'name']);
   autocomplete.setComponentRestrictions({'country':'NO'});
   autocomplete.addListener('place_changed', update_place)

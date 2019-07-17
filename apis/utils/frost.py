@@ -5,8 +5,9 @@ from requests.auth import HTTPBasicAuth
 
 
 class Frost:
-    def __init__(self,cacheFile):
+    def __init__(self,cacheFile,n_rolling_avg_years):
         self.cacheFile = cacheFile
+        self.n_rolling_avg_years=n_rolling_avg_years
         self.cache = json.load(open(cacheFile,'r')) if os.path.isfile(cacheFile) else {}
 
     def cacheWrapper(self,sourceId,timeResolution):
@@ -43,7 +44,7 @@ class Frost:
 
     def getAnnualRollingTimeSeries(self,id,year):
         annual_series = self.getData(id,'P1Y')
-        rolling_values = pd.Series([i['value'] for i in annual_series]).rolling(5).mean()
+        rolling_values = pd.Series([i['value'] for i in annual_series]).rolling(self.n_rolling_avg_years).mean()
         time_filtered_rolling_series = [{
                 'referenceTime' : i['referenceTime'],
                 'value':j

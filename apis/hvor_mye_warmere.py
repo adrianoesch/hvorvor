@@ -13,7 +13,8 @@ hvor_mye_warmere = Blueprint('hvor-mye-warmere', __name__)
 sources = json.load(open('apis/data/sources_air_p1y_clean.json','r'))
 sources = {k:v for k,v in sources.items() if 'geometry' in v}
 cacheFile = 'apis/data/frost_cache.json' if not 'apis' in os.getcwd() else 'data/frost_cache.json'
-frost = Frost(cacheFile)
+n_rolling_avg_years=10
+frost = Frost(cacheFile,n_rolling_avg_years=n_rolling_avg_years)
 
 @hvor_mye_warmere.route('/',methods=['GET'])
 def route():
@@ -22,7 +23,7 @@ def route():
     lng = float(request.args.get('lng'))
     year = int(request.args.get('year'))
     name = request.args.get('name')
-    sources_time_filtered = [(k,(v['geometry']['coordinates'][1],v['geometry']['coordinates'][0])) for k,v in sources.items() if year-5 >= int(v['from'][:4])]
+    sources_time_filtered = [(k,(v['geometry']['coordinates'][1],v['geometry']['coordinates'][0])) for k,v in sources.items() if year-n_rolling_avg_years >= int(v['from'][:4])]
     sources_dists = [ ( i[0], i[1], distance((lat,lng),i[1]).km ) for i in sources_time_filtered]
     sources_dists.sort(key = lambda i :i[2])
     nearest_source = {
@@ -47,7 +48,8 @@ def route():
             'distance_in_km':nearest_source['distance'],
             'difference' : difference,
             'annual': time_series['annual'],
-            'annual_rolling': time_series['annual_rolling']
+            'annual_rolling': time_series['annual_rolling'],
+            'n_rolling_avg_years':n_rolling_avg_years
         })
     # except:
     #     return jsonify({'success':'False'})

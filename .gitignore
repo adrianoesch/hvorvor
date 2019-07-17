@@ -1,5 +1,6 @@
+*.pyc
+*/__pycache__/*
 apis/data/archive
 apis/data/frost_cache.json
 access.log
 error.log
-*.pyc

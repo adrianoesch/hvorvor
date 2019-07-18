@@ -2,6 +2,7 @@ import dateutil.parser
 from datetime import datetime
 import os, json, requests
 from requests.auth import HTTPBasicAuth
+
 x=dateutil.parser.parse('9999-12-31T23:59:59Z')
 
 os.chdir('/Users/adroesch/Desktop/private/hvorvor')
@@ -50,7 +51,7 @@ r = requests.get('https://frost.met.no/observations/availableTimeSeries/v0.jsonl
 os.chdir('/Users/adroesch/Desktop/private/hvorvor/projects/hvor_mye_warmere/')
 json.dump(r.json()['data'],open('data/archive/sources_maxtemp_p1d.json','w'))
 
-from collections import Counter
-c=Counter([i['from'][:4] for i in air_sources.values()])
-c=[(k,v) for k,v in c.items()]
-c.sort(key=lambda i: i[0])
+# from collections import Counter
+# c=Counter([i['from'][:4] for i in air_sources.values()])
+# c=[(k,v) for k,v in c.items()]
+# c.sort(key=lambda i: i[0])

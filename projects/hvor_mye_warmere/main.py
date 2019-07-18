@@ -8,12 +8,19 @@ from github import Github
 from geopy.distance import distance
 from .utils.frost import Frost
 
-hvor_mye_warmere = Blueprint('hvor-mye-warmere', __name__, static_folder='static')
-sources = json.load(open('projects/hvor_mye_warmere/data/sources_air_p1y_clean.json','r'))
-sources = {k:v for k,v in sources.items() if 'geometry' in v}
-cacheFile = 'projects/hvor_mye_warmere/data/frost_cache.json' if not 'apis' in os.getcwd() else 'data/frost_cache.json'
+# global settings
 n_rolling_avg_years=10
-frost = Frost(cacheFile,n_rolling_avg_years=n_rolling_avg_years)
+hot_days_threshold=25
+airTemp_sources_path = 'projects/hvor_mye_warmere/data/sources_air_p1y_clean.json'
+hotDays_sources_path = 'projects/hvor_mye_warmere/data/sources_maxtemp_p1d_clean.json'
+
+hvor_mye_warmere = Blueprint('hvor-mye-warmere', __name__, static_folder='static')
+airTempSources = json.load(open(airTemp_sources_path,'r'))
+hotDaysSources = json.load(open(hotDays_sources_path,'r'))
+cacheFile = 'projects/hvor_mye_warmere/data/frost_cache.json' if not 'apis' in os.getcwd() else 'data/frost_cache.json'
+
+
+frost = Frost(cacheFile,n_rolling_avg_years,hot_days_threshold)
 auth = basic_auth()
 
 @auth.verify_password
@@ -38,31 +45,40 @@ def update():
     lng = float(request.args.get('lng'))
     year = int(request.args.get('year'))
     name = request.args.get('name')
-    sources_time_filtered = [(k,(v['geometry']['coordinates'][1],v['geometry']['coordinates'][0])) for k,v in sources.items() if year-n_rolling_avg_years >= int(v['from'][:4])]
+    airTempSource = getNearestSource(lat,lng,year,'P1Y')
+    hotDaysSource = getNearestSource(lat,lng,year,'P1D')
+    time_series = frost.getTimeSeries(airTempSource['id'],hotDaysSource['id'],year)
+    return jsonify({
+            'success':'True',
+            'request': {
+                'name':name,
+                'coords':{
+                    'lat':lat,
+                    'lng':lng,
+                },
+                'year':year
+            },
+            'airTempSource' : airTempSource,
+            'hotDaysSource' : hotDaysSource,
+            'timeSeries': time_series,
+            'n_rolling_avg_years': n_rolling_avg_years,
+            'hot_days_threshold': hot_days_threshold
+        })
+
+def getNearestSource(lat,lng,year,metric):
+    sources = hotDaysSources if metric=='P1D' else airTempSources
+    sources_time_filtered = [
+        (k, (v['geometry']['coordinates'][1], v['geometry']['coordinates'][0]))
+        for k,v in sources.items() if year-n_rolling_avg_years >= int(v['from'][:4])
+    ]
     sources_dists = [ ( i[0], i[1], distance((lat,lng),i[1]).km ) for i in sources_time_filtered]
     sources_dists.sort(key = lambda i :i[2])
     nearest_source = {
         'id' : sources_dists[0][0],
-        'coords' : sources_dists[0][1],
-        'distance' : sources_dists[0][2]
+        'coords' : {
+            'lat':sources_dists[0][1][0],
+            'lng':sources_dists[0][1][1]
+            },
+        'distance_in_km' : sources_dists[0][2]
     }
-    time_series = frost.getTimeSeries(nearest_source['id'],year)
-    difference = time_series['annual_rolling'][-1]['value']-time_series['annual_rolling'][0]['value']
-    return jsonify({
-            'success':'True',
-            'location_name':name,
-            'request_coords': {
-                'lat':lat,
-                'lng':lng
-            },
-            'source_coords':{
-                'lat':nearest_source['coords'][0],
-                'lng':nearest_source['coords'][1]
-            },
-            'source_id':nearest_source['id'],
-            'distance_in_km':nearest_source['distance'],
-            'difference' : difference,
-            'annual': time_series['annual'],
-            'annual_rolling': time_series['annual_rolling'],
-            'n_rolling_avg_years':n_rolling_avg_years
-        })
+    return nearest_source

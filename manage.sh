@@ -4,7 +4,7 @@ case "$1" in
   start)
     echo -n "Starting Server: "
     cd /home/ec2-user/hvorvor
-    gunicorn --workers 2 --bind localhost:8000 --daemon --access-logfile access.log --error-logfile error.log app:app
+    gunicorn --workers 1 --bind localhost:8000 --daemon --access-logfile access.log --error-logfile error.log app:app
     echo "Success"
     ;;
   stop)

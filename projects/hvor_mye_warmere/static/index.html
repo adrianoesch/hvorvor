@@ -111,6 +111,9 @@ function getKeyMetrics(series){
 }
 
 function plot(response,annualVar,rollingVar,y_label,targetContainer){
+  if(response.timeSeries[rollingVar].filter(i=>i.value!=null).length==0){
+    return targetContainer.innerHTML = '<p>Not enough data available</p>'
+  }
   var plotData =  [{
     x: response.timeSeries[annualVar].map(i=>i.year),
     y: response.timeSeries[annualVar].map(i=>i.value),

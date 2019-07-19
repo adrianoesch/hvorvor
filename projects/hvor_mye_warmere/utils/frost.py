@@ -11,8 +11,8 @@ class Frost:
         self.hot_days_threshold = hot_days_threshold
         self.cache = json.load(open(cacheFile,'r')) if os.path.isfile(cacheFile) else {}
 
-    def cacheWrapper(self,sourceId,metric):
-        if sourceId in self.cache.keys() and metric in self.cache[sourceId].keys():
+    def cacheWrapper(self,sourceId,metric,force=False):
+        if sourceId in self.cache.keys() and metric in self.cache[sourceId].keys() and force is False:
             return self.cache[sourceId][metric]
         else:
             params={
@@ -27,7 +27,7 @@ class Frost:
             )
             if r.status_code==200:
                 data = r.json()['data']
-                data = [{'referenceTime':i['referenceTime'],'value':i['observations'][0]['value']} for i in data] if data else None
+                data = [{'referenceTime':i['referenceTime'],'value':i['observations'][0]['value']} for i in data]
                 self.saveInCache(sourceId,metric,data)
                 return data
             else:
@@ -46,7 +46,7 @@ class Frost:
         rolling_values = pd.Series([i['value'] for i in series]).rolling(self.n_rolling_avg_years).mean()
         time_filtered_rolling_series = [{
                 'year' : i['year'],
-                'value': j
+                'value': j if not pd.isnull(j) else None
             } for i,j in zip(series,rolling_values.values) if i['year']>=year
         ]
         return time_filtered_rolling_series
@@ -61,7 +61,7 @@ class Frost:
         return time_filtered_annual_series
 
     def getRollingAvgAirTempTimeSeries(self,id,year):
-        annual_series = self.getAnnualAvgAirTempTimeSeries(id,year-self.n_rolling_avg_years)
+        annual_series = self.getAnnualAvgAirTempTimeSeries(id,year-self.n_rolling_avg_years-1)
         rolling_series  = self.transformRollingAvg(annual_series,year)
         return rolling_series
 
@@ -72,8 +72,9 @@ class Frost:
                 'value': 1  if i['value']>self.hot_days_threshold else 0
             } for i in annual_series if int(i['referenceTime'][:4])>=year
         ]
-        grouped_series = pd.DataFrame(time_filtered_annual_series).groupby('year').sum().reset_index().to_dict(orient='records')
-        return grouped_series
+        grouped_series = pd.DataFrame(time_filtered_annual_series).groupby('year').sum().reset_index()
+        grouped_series = grouped_series.sort_values('year')
+        return grouped_series.to_dict(orient='records')
 
     def getRollingHotDaysTimeSeries(self,id,year):
         annual_series = self.getAnnualHotDaysTimeSeries(id,year-self.n_rolling_avg_years)

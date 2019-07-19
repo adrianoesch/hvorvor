@@ -1,6 +1,8 @@
 <html>
 <head>
 <link rel="icon" href="./favicon.png">
+<title>Hvor mye warmere?</title>
+<meta name="title" content="Hvor mye warmere?">
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQT5f94LsmFh2O4dn_HlQe0pQQMoUWUmM&libraries=places"></script>
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 <style>
@@ -57,7 +59,7 @@ select{
   width: 200px;
   height: 200px;
   animation: spin 2s linear infinite;
-  margin-top: 100px;
+  margin-top: 250px;
   margin-left: 220px;
 }
 
@@ -88,7 +90,7 @@ select{
     <h2>Gjennomsnittlig Lufttemperatur</h2>
     <div id='airTempChart'></div>
     <div id='airTempText' style='margin-bottom:100px;'></div>
-    <h2>Hete Dager</h2>
+    <h2>Hete Dager (test)</h2>
     <div id='hotDaysChart'></div>
     <div id='hotDaysTempText'></div>
     <div id='details'></div>
@@ -101,6 +103,7 @@ const annual_line_color = 'rgb(250, 171, 171)';
 const rolling_line_color = 'rgb(176, 32, 32)';
 
 function getKeyMetrics(series){
+  series = series.filter(i=>i.value!=null)
   let start_value = series[0].value
   let end_value = series[series.length-1].value
   let difference = end_value-start_value
@@ -221,13 +224,18 @@ function showAirTempText(response){
     'Dataene ble levert av <a target="_blank" href="https://frost.met.no/index.html">Frost</a>, en tjeneste fra MET Norge.</p>';
 }
 
-function render(response){
-  var respDiv = document.getElementById('response')
-  if(!response.success){
-    respDiv.style.display='none'
-    return
+var loader = {
+  hide:function(){
+    document.getElementById('response').style.display = 'block'
+    document.getElementsByClassName('loader')[0].classList.add('hidden')
+  },
+  show:function(){
+    document.getElementById('response').style.display = 'none'
+    document.getElementsByClassName('loader')[0].classList.remove('hidden')
   }
-  respDiv.style.display='block'
+}
+
+function render(response){
   if(is_dev){
     console.log(response)
   }
@@ -237,7 +245,7 @@ function render(response){
   // render hot days temp response
   let y_label = 'hete dager i år (>'+response.hot_days_threshold+'°C)';
   plot(response,'annualHotDays','rollingHotDays',y_label, document.getElementById('hotDaysChart'))
-  document.getElementsByClassName('loader')[0].classList.add('hidden')
+  loader.hide()
   // plotHotDaysChart(response)
 };
 
@@ -249,7 +257,7 @@ function update_year(e){
 function update_place(place){
   var place = autocomplete.getPlace();
   var location = place.geometry.location;
-  var current_location = {
+  current_location = {
     lat:location.lat(),
     lng:location.lng(),
     name: place.name
@@ -269,7 +277,7 @@ function update(location,year){
     '&lng='+location.lng.toString()+
     '&name='+location.name+
     '&year='+year.toString();
-  document.getElementsByClassName('loader')[0].classList.remove('hidden')
+  loader.show()
   fetch(url)
     .then(r=>r.json())
     .then(render);

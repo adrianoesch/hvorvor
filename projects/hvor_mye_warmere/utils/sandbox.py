@@ -5,8 +5,18 @@ from requests.auth import HTTPBasicAuth
 import pandas as pd
 from collections import Counter
 
-d = json.load(open('projects/hvor_mye_warmere/data/sources_maxtemp_p1d_clean.json','r'))
-[i for i in d.values() if 'shortName' in i and 'Bergen' in i['shortName']]
+airTempSource = json.load(open('projects/hvor_mye_warmere/data/sources_air_p1y_clean.json','r'))
+hotDaysSource = json.load(open('projects/hvor_mye_warmere/data/sources_maxtemp_p1d_clean.json','r'))
+
+[i for i in airTempSource.values() if 'shortName' in i and 'OSLO' in i['name']]
+[i for i in hotDaysSource.values() if 'shortName' in i and 'OSLO' in i['name']]
+
+remove = ["SN44640",'SN18700']
+
+
+json.dump({k:v for k,v in airTempSource.items() if not k in remove},open('projects/hvor_mye_warmere/data/sources_air_p1y_clean.json','w'))
+json.dump({k:v for k,v in hotDaysSource.items() if not k in ["SN18950","SN44640",'SN18700']},open('projects/hvor_mye_warmere/data/sources_maxtemp_p1d_clean.json','w'))
+
 
 id='SN50540'
 hot_temp_threshold=25
@@ -32,3 +42,7 @@ hot_days[id]=[{
 
 data = hot_days[id]
 pd.DataFrame(data).groupby('year').sum().reset_index().to_dict(orient='records')
+
+
+d2 = json.load(open('projects/hvor_mye_warmere/data/frost_cache.json','r'))
+d2['SN18700']

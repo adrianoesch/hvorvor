@@ -11,7 +11,7 @@ hotDaysSource = json.load(open('projects/hvor_mye_warmere/data/sources_maxtemp_p
 [i for i in airTempSource.values() if 'shortName' in i and 'OSLO' in i['name']]
 [i['id'] for i in hotDaysSource.values() if 'shortName' in i and 'OSLO' in i['name']]
 
-remove = ["SN52535","SN68860"]
+remove = ["SN52535","SN68860",'SN49490']
 
 json.dump({k:v for k,v in airTempSource.items() if not k in remove},open('projects/hvor_mye_warmere/data/sources_air_p1y_clean.json','w'))
 json.dump({k:v for k,v in hotDaysSource.items() if not k in remove},open('projects/hvor_mye_warmere/data/sources_maxtemp_p1d_clean.json','w'))

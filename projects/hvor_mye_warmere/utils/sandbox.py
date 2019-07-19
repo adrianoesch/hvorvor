@@ -9,13 +9,13 @@ airTempSource = json.load(open('projects/hvor_mye_warmere/data/sources_air_p1y_c
 hotDaysSource = json.load(open('projects/hvor_mye_warmere/data/sources_maxtemp_p1d_clean.json','r'))
 
 [i for i in airTempSource.values() if 'shortName' in i and 'OSLO' in i['name']]
-[i for i in hotDaysSource.values() if 'shortName' in i and 'OSLO' in i['name']]
+[i['id'] for i in hotDaysSource.values() if 'shortName' in i and 'OSLO' in i['name']]
 
-remove = ["SN44640",'SN18700']
+remove = ["SN52535"]
 
 
 json.dump({k:v for k,v in airTempSource.items() if not k in remove},open('projects/hvor_mye_warmere/data/sources_air_p1y_clean.json','w'))
-json.dump({k:v for k,v in hotDaysSource.items() if not k in ["SN18950","SN44640",'SN18700']},open('projects/hvor_mye_warmere/data/sources_maxtemp_p1d_clean.json','w'))
+json.dump({k:v for k,v in hotDaysSource.items() if not k in remove},open('projects/hvor_mye_warmere/data/sources_maxtemp_p1d_clean.json','w'))
 
 
 id='SN50540'

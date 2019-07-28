@@ -1,6 +1,6 @@
 *.pyc
 */__pycache__
-projects/hvor_mye_warmere/data/archive
+projects/hvor_mye_warmere/data/cache
 projects/hvor_mye_warmere/data/frost_cache.json
 access.log
 error.log

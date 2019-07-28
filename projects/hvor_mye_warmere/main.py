@@ -17,10 +17,10 @@ hotDays_sources_path = 'projects/hvor_mye_warmere/data/sources_maxtemp_p1d_clean
 hvor_mye_warmere = Blueprint('hvor-mye-warmere', __name__, static_folder='static')
 airTempSources = json.load(open(airTemp_sources_path,'r'))
 hotDaysSources = json.load(open(hotDays_sources_path,'r'))
-cacheFile = 'projects/hvor_mye_warmere/data/frost_cache.json' if not 'apis' in os.getcwd() else 'data/frost_cache.json'
+cacheDir = 'projects/hvor_mye_warmere/data/cache/' if not 'apis' in os.getcwd() else 'data/cache/'
 
 
-frost = Frost(cacheFile,n_rolling_avg_years,hot_days_threshold)
+frost = Frost(cacheDir,n_rolling_avg_years,hot_days_threshold)
 auth = basic_auth()
 
 @auth.verify_password

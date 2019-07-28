@@ -5,19 +5,27 @@ from requests.auth import HTTPBasicAuth
 
 
 class Frost:
-    def __init__(self,cacheFile,n_rolling_avg_years=10,hot_days_threshold=25):
-        self.cacheFile = cacheFile
+    def __init__(self,cacheDir,n_rolling_avg_years=10,hot_days_threshold=25):
+        self.cacheDir = cacheDir
         self.n_rolling_avg_years = n_rolling_avg_years
         self.hot_days_threshold = hot_days_threshold
-        self.cache = json.load(open(cacheFile,'r')) if os.path.isfile(cacheFile) else {}
+        self.fullMetricsMap = {
+            'P1Y':'best_estimate_mean(air_temperature P1Y)',
+            'P1Ymean':'mean(air_temperature P1Y)',
+            'P1D': 'max(air_temperature P1D)',
+            'P1Ymax': 'max(air_temperature P1Y)'
+        }
 
     def cacheWrapper(self,sourceId,metric,force=False):
-        if sourceId in self.cache.keys() and metric in self.cache[sourceId].keys() and force is False:
-            return self.cache[sourceId][metric]
+        cacheFiles = [i.split('.')[0] for i in os.listdir(self.cacheDir) if i.split('.')[1]=='json']
+        sourceCacheFiles = [i for i in cacheFiles if i.split('_')[0]==sourceId and i.split('_')[1]==metric]
+        if len(sourceCacheFiles)>0 and force==False:
+            with open(os.path.join(self.cacheDir,sourceCacheFiles[0]+'.json'),'r') as f:
+                return json.load(f)
         else:
             params={
                 'sources':sourceId,
-                'elements':'best_estimate_mean(air_temperature P1Y)' if metric == 'P1Y' else 'max(air_temperature P1D)',
+                'elements': self.fullMetricsMap[metric],
                 'referencetime':'1900-01-01T00:00:00Z/2019-01-01T00:00:00Z'
             }
             if metric == 'P1D':
@@ -34,12 +42,9 @@ class Frost:
                 return None
 
     def saveInCache(self,sourceId,metric,data):
-        if not sourceId in self.cache.keys():
-            self.cache[sourceId] = {metric: data}
-        else:
-            self.cache[sourceId][metric] = data
-        with open(self.cacheFile,'w') as f:
-            json.dump(self.cache,f)
+        cacheFileName = sourceId+'_'+metric+'.json'
+        with open(os.path.join(self.cacheDir,cacheFileName),'w') as f:
+            json.dump(data,f)
         return 'Success'
 
     def transformRollingAvg(self,series,year):
@@ -65,6 +70,21 @@ class Frost:
         rolling_series  = self.transformRollingAvg(annual_series,year)
         return rolling_series
 
+
+    def getAnnualMaxAirTempTimeSeries(self,id,year):
+        annual_series = self.cacheWrapper(id,'P1Ymax')
+        time_filtered_annual_series = [{
+                'year':  int(i['referenceTime'][:4]),
+                'value': i['value']
+            } for i in annual_series if int(i['referenceTime'][:4])>=year
+        ]
+        return time_filtered_annual_series
+
+    def getRollingMaxAirTempTimeSeries(self,id,year):
+        annual_series = self.getAnnualMaxAirTempTimeSeries(id,year-self.n_rolling_avg_years-1)
+        rolling_series  = self.transformRollingAvg(annual_series,year)
+        return rolling_series
+
     def getAnnualHotDaysTimeSeries(self,id,year):
         annual_series = self.cacheWrapper(id,'P1D')
         time_filtered_annual_series = [{
@@ -87,5 +107,7 @@ class Frost:
             'rollingAirTemp': self.getRollingAvgAirTempTimeSeries(airTempId,year),
             'annualHotDays': self.getAnnualHotDaysTimeSeries(hotDaysId,year),
             'rollingHotDays': self.getRollingHotDaysTimeSeries(hotDaysId,year),
+            'annualMaxAirTemp': self.getAnnualMaxAirTempTimeSeries(hotDaysId,year),
+            'rollingMaxAirTemp': self.getRollingMaxAirTempTimeSeries(hotDaysId,year),
         }
         return r

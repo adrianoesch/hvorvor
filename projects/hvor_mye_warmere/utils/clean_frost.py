@@ -6,7 +6,14 @@ from requests.auth import HTTPBasicAuth
 x=dateutil.parser.parse('9999-12-31T23:59:59Z')
 
 os.chdir('/Users/adroesch/Desktop/private/hvorvor')
-d = json.load(open('apis/data/sources_air_p1y.json','r'))
+r = requests.get('https://frost.met.no/observations/availableTimeSeriesv0.jsonld',
+        params={
+            'elements':'mean(air_temperature P1D)'
+        },
+        auth=HTTPBasicAuth(os.environ['FROST_KEY'],os.environ['FROST_SECRET'])
+)
+d = r.json()['data']
+
 air_sources = {}
 for i in d:
     if not i['sourceId'] in air_sources:

@@ -82,7 +82,7 @@ select{
   <p>
     <span class="label">Fødselsår:</span>
     <select></select>
-    <span class="label">Hiemby:</span>
+    <span class="label">Hjemby:</span>
     <input type='text' size="30" value=''></input>
   </p>
   <div class='loader hidden'></div>
@@ -90,10 +90,10 @@ select{
     <h2>Gjennomsnittlig Lufttemperatur</h2>
     <div id='airTempChart'></div>
     <div id='airTempText' style='margin-bottom:100px;'></div>
-    <h2>Hete Dager (test)</h2>
-    <div id='hotDaysChart'></div>
-    <div id='hotDaysTempText'></div>
-    <div id='details'></div>
+    <h2>Alternative Metric A: Hete Dager</h2>
+    <div id='hotDaysChart' style='margin-bottom:100px;'></div>
+    <h2>Alternative Metric B: Årlig Maximum</h2>
+    <div id='maxTempChart'></div>
   </div>
 <div>
 </body>
@@ -110,7 +110,7 @@ function getKeyMetrics(series){
   return([start_value,end_value,difference])
 }
 
-function plot(response,annualVar,rollingVar,y_label,targetContainer){
+function plot(response,annualVar,rollingVar,y_label,annual_label,targetContainer){
   if(response.timeSeries[rollingVar].filter(i=>i.value!=null).length==0){
     return targetContainer.innerHTML = '<p>Not enough data available</p>'
   }
@@ -118,7 +118,7 @@ function plot(response,annualVar,rollingVar,y_label,targetContainer){
     x: response.timeSeries[annualVar].map(i=>i.year),
     y: response.timeSeries[annualVar].map(i=>i.value),
     type:'line',
-    name: 'årlig gjennomsnitt',
+    name: annual_label,
     line:{
       color : annual_line_color,
       width:2
@@ -243,11 +243,12 @@ function render(response){
     console.log(response)
   }
   // render air temp response
-  plot(response,'annualAirTemp','rollingAirTemp','lufttemperatur (°C)',document.getElementById('airTempChart'))
+  plot(response,'annualAirTemp','rollingAirTemp','lufttemperatur (°C)','årlig gjennomsnitt',document.getElementById('airTempChart'))
   showAirTempText(response)
   // render hot days temp response
   let y_label = 'hete dager i år (>'+response.hot_days_threshold+'°C)';
-  plot(response,'annualHotDays','rollingHotDays',y_label, document.getElementById('hotDaysChart'))
+  plot(response,'annualHotDays','rollingHotDays',y_label,'dager i år', document.getElementById('hotDaysChart'))
+  plot(response,'annualMaxAirTemp','rollingMaxAirTemp','lufttemperatur (°C)','årlig maximum', document.getElementById('maxTempChart'))
   loader.hide()
   // plotHotDaysChart(response)
 };

@@ -13,10 +13,17 @@ n_rolling_avg_years=10
 hot_days_threshold=25
 airTemp_sources_path = 'projects/hvor_mye_warmere/data/sources_air_p1y_clean.json'
 hotDays_sources_path = 'projects/hvor_mye_warmere/data/sources_maxtemp_p1d_clean.json'
+rain_sources_path = 'projects/hvor_mye_warmere/data/sources_maxtemp_p1d_clean.json'
 
 hvor_mye_warmere = Blueprint('hvor-mye-warmere', __name__, static_folder='static')
 airTempSources = json.load(open(airTemp_sources_path,'r'))
 hotDaysSources = json.load(open(hotDays_sources_path,'r'))
+rainSources = json.load(open(rain_sources_path,'r'))
+sourcesDic={
+    'airTemp': airTempSources,
+    'hotDays': hotDaysSources,
+    'rain': rainSources
+}
 cacheDir = 'projects/hvor_mye_warmere/data/cache/' if not 'apis' in os.getcwd() else 'data/cache/'
 
 
@@ -45,9 +52,10 @@ def update():
     lng = float(request.args.get('lng'))
     year = int(request.args.get('year'))
     name = request.args.get('name')
-    airTempSource = getNearestSource(lat,lng,year,'P1Y')
-    hotDaysSource = getNearestSource(lat,lng,year,'P1D')
-    time_series = frost.getTimeSeries(airTempSource['id'],hotDaysSource['id'],year)
+    airTempSource = getNearestSource(lat,lng,year,'airTemp')
+    hotDaysSource = getNearestSource(lat,lng,year,'hotDays')
+    rainSource = getNearestSource(lat,lng,year,'rain')
+    time_series = frost.getTimeSeries(airTempSource['id'],hotDaysSource['id'],rainSource['id'],year)
     return jsonify({
             'success':'True',
             'request': {
@@ -60,13 +68,14 @@ def update():
             },
             'airTempSource' : airTempSource,
             'hotDaysSource' : hotDaysSource,
+            'rainSource': rainSource,
             'timeSeries': time_series,
             'n_rolling_avg_years': n_rolling_avg_years,
             'hot_days_threshold': hot_days_threshold
         })
 
 def getNearestSource(lat,lng,year,metric):
-    sources = hotDaysSources if metric=='P1D' else airTempSources
+    sources = sourcesDic[metric]
     sources_time_filtered = [
         (k, (v['geometry']['coordinates'][1], v['geometry']['coordinates'][0]))
         for k,v in sources.items() if year-n_rolling_avg_years >= int(v['from'][:4])

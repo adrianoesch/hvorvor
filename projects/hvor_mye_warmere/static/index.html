@@ -70,6 +70,29 @@ select{
 .hidden{
   display: none;
 }
+.collapsed{
+  height:0px;
+  overflow:hidden;
+}
+.expanded{
+  height:auto;
+}
+.expandable{
+  transition: height .8s ease;
+}
+#expandButton{
+  text-align: center;
+  width: 140px;
+  left: 50%;
+  position: relative;
+  margin-left: -70px;
+  border: 1px solid grey;
+  border-radius: 4px;
+  height: 25px;
+  line-height: 25px;
+  cursor: pointer;
+  margin-bottom:50px;
+}
 </style>
 </head>
 <body>
@@ -90,10 +113,15 @@ select{
     <h2>Gjennomsnittlig Lufttemperatur</h2>
     <div id='airTempChart'></div>
     <div id='airTempText' style='margin-bottom:100px;'></div>
-    <h2>Alternative Metric A: Hete Dager</h2>
-    <div id='hotDaysChart' style='margin-bottom:100px;'></div>
-    <h2>Alternative Metric B: Årlig Maximum</h2>
-    <div id='maxTempChart'></div>
+    <div id='expandButton' onclick="toggleExpand()">Vis mer</div>
+    <div id='expandable' class='expandable collapsed'>
+      <h2>Alternative Metric A: Hete Dager</h2>
+      <div id='hotDaysChart' style='margin-bottom:100px;'></div>
+      <h2>Alternative Metric B: Årlig Maximum</h2>
+      <div id='maxTempChart'></div>
+      <h2>Alternative Metric C: Regn</h2>
+      <div id='rainVolChart'></div>
+    </div>
   </div>
 <div>
 </body>
@@ -110,6 +138,18 @@ function getKeyMetrics(series){
   return([start_value,end_value,difference])
 }
 
+function toggleExpand(){
+  if (document.getElementById('expandable').classList.contains('collapsed')){
+    document.getElementById('expandButton').innerHTML='Vis mindre'
+    document.getElementById('expandable').classList.remove('collapsed')
+    document.getElementById('expandable').classList.add('expanded')
+  }else{
+    document.getElementById('expandButton').innerHTML='Vis mer'
+    document.getElementById('expandable').classList.add('collapsed')
+    document.getElementById('expandable').classList.remove('expanded')
+  }
+}
+
 function plot(response,annualVar,rollingVar,y_label,annual_label,targetContainer){
   if(response.timeSeries[rollingVar].filter(i=>i.value!=null).length==0){
     return targetContainer.innerHTML = '<p>Not enough data available</p>'
@@ -121,7 +161,7 @@ function plot(response,annualVar,rollingVar,y_label,annual_label,targetContainer
     name: annual_label,
     line:{
       color : annual_line_color,
-      width:2
+      width:1
     }
   },{
     x: response.timeSeries[rollingVar].map(i=>i.year),
@@ -134,8 +174,16 @@ function plot(response,annualVar,rollingVar,y_label,annual_label,targetContainer
     }
   }];
   var [start_value, end_value, difference] = getKeyMetrics(response.timeSeries[rollingVar])
+  var metricAbbrMap = {
+    'annualAirTemp': '°C',
+    'annualHotDays': 'd',
+    'annualMaxAirTemp': '°C',
+    'annualRainVol':'mm'
+  }
+  var metricAbbr = metricAbbrMap[annualVar]
+  var annotXpos =  annualVar=='annualRainVol' ? 1.2 : 1.15;
   var layout = {
-      margin: { t: 0,b:30,r:80,l:60 },
+      margin: { t: 0, b:30, r:120, l:60 },
       showLegend:true,
       legend: {
         orientation:'h',
@@ -201,9 +249,9 @@ function plot(response,annualVar,rollingVar,y_label,annual_label,targetContainer
             'yref':'y',
             'y':start_value+((end_value-start_value)/2),
             'xref':'paper',
-            'x':1.13,
+            'x':annotXpos,
             'showarrow':false,
-            'text':'<b>'+(difference>0 ? '+' : '') + difference.toFixed(1)+(annualVar.indexOf('AirTemp')>-1 ? '°C' : 'd')+'</b>',
+            'text':'<b>'+(difference>0 ? '+' : '') + difference.toFixed(1)+metricAbbr+'</b>',
             'font':{
               'size':14,
               'color':'rgb(176, 32, 32)'
@@ -249,6 +297,7 @@ function render(response){
   let y_label = 'hete dager i år (>'+response.hot_days_threshold+'°C)';
   plot(response,'annualHotDays','rollingHotDays',y_label,'dager i år', document.getElementById('hotDaysChart'))
   plot(response,'annualMaxAirTemp','rollingMaxAirTemp','lufttemperatur (°C)','årlig maximum', document.getElementById('maxTempChart'))
+  plot(response,'annualRainVol','rollingAvgRainVol','regnvolum (mm)','årlig totalt', document.getElementById('rainVolChart'))
   loader.hide()
   // plotHotDaysChart(response)
 };

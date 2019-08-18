@@ -13,7 +13,8 @@ class Frost:
             'P1Y':'best_estimate_mean(air_temperature P1Y)',
             'P1Ymean':'mean(air_temperature P1Y)',
             'P1D': 'max(air_temperature P1D)',
-            'P1Ymax': 'max(air_temperature P1Y)'
+            'P1Ymax': 'max(air_temperature P1Y)',
+            'P1Yrain':'sum(precipitation_amount P1Y)'
         }
 
     def cacheWrapper(self,sourceId,metric,force=False):
@@ -101,7 +102,21 @@ class Frost:
         rolling_series  = self.transformRollingAvg(annual_series,year)
         return rolling_series
 
-    def getTimeSeries(self,airTempId,hotDaysId,year):
+    def getAnnualRainVolTimeSeries(self,id,year):
+        annual_series = self.cacheWrapper(id,'P1Yrain')
+        time_filtered_annual_series = [{
+                'year':  int(i['referenceTime'][:4]),
+                'value': i['value']
+            } for i in annual_series if int(i['referenceTime'][:4])>=year
+        ]
+        return time_filtered_annual_series
+
+    def getRollingRainVolTimeSeries(self,id,year):
+        annual_series = self.getAnnualRainVolTimeSeries(id,year-self.n_rolling_avg_years-1)
+        rolling_series  = self.transformRollingAvg(annual_series,year)
+        return rolling_series
+
+    def getTimeSeries(self,airTempId,hotDaysId,rainId,year):
         r = {
             'annualAirTemp': self.getAnnualAvgAirTempTimeSeries(airTempId,year),
             'rollingAirTemp': self.getRollingAvgAirTempTimeSeries(airTempId,year),
@@ -109,5 +124,7 @@ class Frost:
             'rollingHotDays': self.getRollingHotDaysTimeSeries(hotDaysId,year),
             'annualMaxAirTemp': self.getAnnualMaxAirTempTimeSeries(hotDaysId,year),
             'rollingMaxAirTemp': self.getRollingMaxAirTempTimeSeries(hotDaysId,year),
+            'annualRainVol': self.getAnnualRainVolTimeSeries(rainId,year),
+            'rollingAvgRainVol': self.getRollingRainVolTimeSeries(rainId,year)
         }
         return r

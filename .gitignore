@@ -5,3 +5,4 @@ projects/hvor_mye_warmere/data/frost_cache.json
 access.log
 error.log
 *.DS_Store
+*archive/

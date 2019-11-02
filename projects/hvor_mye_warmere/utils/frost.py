@@ -58,7 +58,7 @@ class Frost:
         return time_filtered_rolling_series
 
     def getAnnualAvgAirTempTimeSeries(self,id,year):
-        annual_series = self.cacheWrapper(id,'P1Y')
+        annual_series = self.cacheWrapper(id,'P1Ymean')
         time_filtered_annual_series = [{
                 'year':  int(i['referenceTime'][:4]),
                 'value': i['value']

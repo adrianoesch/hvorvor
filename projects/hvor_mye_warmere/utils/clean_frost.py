@@ -6,9 +6,9 @@ from requests.auth import HTTPBasicAuth
 x=dateutil.parser.parse('9999-12-31T23:59:59Z')
 
 os.chdir('/Users/adroesch/Desktop/private/hvorvor')
-r = requests.get('https://frost.met.no/observations/availableTimeSeriesv0.jsonld',
+r = requests.get('https://frost.met.no/observations/availableTimeSeries/v0.jsonld',
         params={
-            'elements':'mean(air_temperature P1D)'
+            'elements':'mean(air_temperature P1Y)'
         },
         auth=HTTPBasicAuth(os.environ['FROST_KEY'],os.environ['FROST_SECRET'])
 )
@@ -36,19 +36,19 @@ for i in d:
 air_sources = {k:v for k,v in air_sources.items() if v['to'][:4]=='9999'}
 
 air_sources.items()
-request_ids = ','.join([k.split(':')[0] for k,v in air_sources.items()][400:])
+request_ids = ','.join([k.split(':')[0] for k,v in air_sources.items()][100:])
 r = requests.get('https://frost.met.no/sources/v0.jsonld',
         params={'ids':request_ids},
         auth=HTTPBasicAuth(os.environ['FROST_KEY'],os.environ['FROST_SECRET'])
 )
-d = r.json()['data']
+# d = d+r.json()['data']
 
 air_sources = {k.split(':')[0]:v for k,v in air_sources.items()}
 for i in d:
     for k,v in i.items():
         if not k in air_sources[i['id']].keys():
             air_sources[i['id']][k]=v
-json.dump(air_sources,open('data/sources_air_p1d_clean.json','w'))
+json.dump(air_sources,open('projects/hvor_mye_warmere/data/sources_mean_air_p1y_clean.json','w'))
 
 # max temps
 r = requests.get('https://frost.met.no/observations/availableTimeSeries/v0.jsonld',

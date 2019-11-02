@@ -48,6 +48,7 @@ for i in d:
     for k,v in i.items():
         if not k in air_sources[i['id']].keys():
             air_sources[i['id']][k]=v
+air_sources = {k:v for k,v in air_sources.items() if'geometry' in v}
 json.dump(air_sources,open('projects/hvor_mye_warmere/data/sources_mean_air_p1y_clean.json','w'))
 
 # max temps

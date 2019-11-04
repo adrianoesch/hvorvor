@@ -11,7 +11,7 @@ from .utils.frost import Frost
 # global settings
 n_rolling_avg_years=10
 hot_days_threshold=25
-airTemp_sources_path = 'projects/hvor_mye_warmere/data/sources_mean_air_p1y_clean.json'
+airTemp_sources_path = 'projects/hvor_mye_warmere/data/sources_mean_air_p1y_clean_b.json'
 hotDays_sources_path = 'projects/hvor_mye_warmere/data/sources_maxtemp_p1d_clean.json'
 rain_sources_path = 'projects/hvor_mye_warmere/data/sources_maxtemp_p1d_clean.json'
 
